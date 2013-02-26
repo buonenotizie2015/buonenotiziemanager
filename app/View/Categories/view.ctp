@@ -17,7 +17,7 @@
 			</dd>
 			<?php endif; ?>
 			<?php if (!empty($category['Feed']['id'])): ?>
-			<dt><?php echo __('Feed Name'); ?></dt>
+			<dt><?php echo __('Feed'); ?></dt>
 			<dd>
 				<?php echo $this->Html->link($category['Feed']['name'], array('controller' => 'feeds', 'action' => 'view', $category['Feed']['id'])); ?>
 				&nbsp;
@@ -63,9 +63,20 @@
 				<td><?php echo $itemField['description']; ?></td>
 				<td><?php echo $itemField['pubDate']; ?></td>
 				<td>
-					<?php echo $this->Form->postLink(__('Import'), array('controller' => 'articles', 'action' => 'add', 'title'=>'pippotitolo', 'link'=>'www'), array('class' => 'btn btn-small')); ?>
 					<?php $itemLink = is_array($itemField['link']) ? $itemField['link']['@'] : $itemField['link']; ?>
 					<?php echo $this->Html->link(__('View source'), $itemLink, array('target' => '_blank', 'class' => 'btn btn-small')); ?>
+					<?php //echo $this->Form->postLink(__('Import'), array('controller' => 'articles', 'action' => 'add', 'title' => $itemField['title'],  'link' => $itemLink, 'description' => $itemField['description'], 'pubDate' => $itemField['pubDate'], 'category_id' => $category['Category']['id']), array('class' => 'btn btn-small')); ?>
+					
+					<?php echo $this->Form->create('Article', array('id' => 'importArticle', 'type' => 'post', 'url' => array('controller' => 'articles', 'action' => 'add')));
+					echo $this->Form->hidden('Article.title', array('default' => $itemField['title']));
+					echo $this->Form->hidden('Article.link', array('default' => $itemLink));
+					echo $this->Form->hidden('Article.description', array('default' => $itemField['description']));
+					echo $this->Form->hidden('Article.pubDate', array('default' => $itemField['pubDate']));
+					echo $this->Form->hidden('Article.category_id', array('default' => $category['Category']['id']));
+					echo $this->Form->hidden('Article.confirm', array('default' => 'toConfirm'));
+
+					echo $this->Form->submit(__('Import'), array('class' => 'btn btn-small'));
+					echo $this->Form->end(); ?>
 				</td>
 			</tr>
 		<?php endforeach; ?>

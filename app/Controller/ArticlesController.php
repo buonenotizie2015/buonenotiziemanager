@@ -17,18 +17,25 @@ class ArticlesController extends AppController {
 	}
 
 	public function add() {
-		$this->pageTitle = 'Edit User';
-		
-		if ($this->request->is('post')) {
-			$this->Article->create();
-			if ($this->Article->save($this->request->data)) {
-				$this->Session->setFlash(__('The article has been saved'));
-				$this->redirect(array('action' => 'index'));
+		if($this->request->data['Article']['confirm']){
+			$this->Session->setFlash(__('Check article datas and submit the form.'));
+		}
+		else{
+			if (($this->request->is('post') || $this->request->is('put'))) {
+				$this->Article->create();
+				if ($this->Article->save($this->request->data)) {
+					$this->Session->setFlash(__('The article has been saved'));
+					$this->redirect(array('action' => 'view', $this->Article->id));
+				} else {
+					$this->Session->setFlash(__('The article could not be saved. Please, try again.'));
+				}
 			} else {
-				$this->Session->setFlash(__('The article could not be saved. Please, try again.'));
+				//$options = array('conditions' => array('Article.' . $this->Article->primaryKey => $id));
+				$this->request->data = array('Article' => $this->request->data['Articles']);
 			}
 		}
-		$categories = $this->Article->Category->find('list');
+		
+		$categories = $this->Article->Category->generateTreeList(null, null, null, ' - ');
 		$this->set(compact('categories'));
 	}
 

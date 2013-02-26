@@ -2,7 +2,6 @@
 <?php echo $this->Form->create('Article'); ?>
 	<fieldset>
 		<legend><?php echo __('Add Article'); ?></legend>
-		<pre><?php print_r($this->request->params['named']);?></pre>
 	<?php
 		echo $this->Form->input('title');
 		echo $this->Form->input('link');

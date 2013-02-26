@@ -5,7 +5,7 @@
 			<th><?php echo $this->Paginator->sort('name'); ?></th>
 			<th><?php echo $this->Paginator->sort('slug'); ?></th>
 			<th><?php echo $this->Paginator->sort('parent_id'); ?></th>
-			<th><?php echo $this->Paginator->sort('Feed Url'); ?></th>
+			<th><?php echo $this->Paginator->sort('Feed'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	<?php foreach ($categories as $category): ?>

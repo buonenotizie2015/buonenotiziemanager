@@ -48,7 +48,8 @@ class FeedsController extends AppController {
 				$this->Session->setFlash(__('The feed could not be saved. Please, try again.'));
 			}
 		}
-		$categories = $this->Feed->Category->find('list');
+		//$categories = $this->Feed->Category->find('list', array('fields' => array('Category.id', 'Category.name', 'Category.parent_id')));
+		$categories = $this->Feed->Category->generateTreeList(null, null, null, ' - ');
 		$this->set(compact('categories'));
 	}
 
@@ -74,7 +75,8 @@ class FeedsController extends AppController {
 			$options = array('conditions' => array('Feed.' . $this->Feed->primaryKey => $id));
 			$this->request->data = $this->Feed->find('first', $options);
 		}
-		$categories = $this->Feed->Category->find('list');
+		//$categories = $this->Feed->Category->find('list');
+		$categories = $this->Feed->Category->generateTreeList(null, null, null, ' - ');
 		$this->set(compact('categories'));
 	}
 

@@ -36,6 +36,7 @@
 	
 	//routing for smart url
 	//Router::connect('/categories/*', array('controller' => 'categories', 'action' => 'index'));
+	//Router::connect('/categories/*', array('controller' => 'categories', 'action' => 'view'));
 
 /**
  * Load all plugin routes.  See the CakePlugin documentation on

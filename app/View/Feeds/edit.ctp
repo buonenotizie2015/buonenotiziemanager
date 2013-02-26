@@ -4,7 +4,6 @@
 		<legend><?php echo __('Edit Feed'); ?></legend>
 	<?php
 		echo $this->Form->input('id', array('type' => 'hidden'));
-		echo $this->Form->input('id');
 		echo $this->Form->input('name');
 		echo $this->Form->input('url');
 		echo $this->Form->input('category_id');

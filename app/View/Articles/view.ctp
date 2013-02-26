@@ -2,25 +2,13 @@
 <h2><?php  echo __('Article'); ?> "<?php echo h($article['Article']['title']); ?>"</h2>
 	<dl>
 		<dt><?php echo __('Link'); ?></dt>
-		<dd>
-			<?php echo h($article['Article']['link']); ?>
-			&nbsp;
-		</dd>
+		<dd><?php echo h($article['Article']['link']); ?>&nbsp;</dd>
 		<dt><?php echo __('Description'); ?></dt>
-		<dd>
-			<?php echo h($article['Article']['description']); ?>
-			&nbsp;
-		</dd>
+		<dd><?php echo $article['Article']['description']; ?>&nbsp;</dd>
 		<dt><?php echo __('PubDate'); ?></dt>
-		<dd>
-			<?php echo h($article['Article']['pubDate']); ?>
-			&nbsp;
-		</dd>
+		<dd><?php echo h($article['Article']['pubDate']); ?>&nbsp;</dd>
 		<dt><?php echo __('Category'); ?></dt>
-		<dd>
-			<?php echo $this->Html->link($article['Category']['name'], array('controller' => 'categories', 'action' => 'view', $article['Category']['id'])); ?>
-			&nbsp;
-		</dd>
+		<dd><?php echo $this->Html->link($article['Category']['name'], array('controller' => 'categories', 'action' => 'view', $article['Category']['id'])); ?>&nbsp;</dd>
 	</dl>
 </div>
 <div class="actions">

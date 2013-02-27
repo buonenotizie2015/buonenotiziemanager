@@ -81,4 +81,8 @@ class Article extends AppModel {
 			'order' => ''
 		)
 	);
+	
+	public function isOwnedBy($category, $user) {
+		return $this->Category->UsersCategory->field('category_id', array('category_id' => $category, 'user_id' => $user)) === $category;
+	}
 }

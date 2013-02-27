@@ -1,29 +1,28 @@
 <?php
 App::uses('AppController', 'Controller');
-/**
- * Feeds Controller
- *
- * @property Feed $Feed
- */
-class FeedsController extends AppController {
 
-/**
- * index method
- *
- * @return void
- */
+class FeedsController extends AppController {
+	
+	public function beforeFilter() {
+		parent::beforeFilter();
+	}
+	
+	public function isAuthorized($user) {
+		
+		//$feedCategoryId = $this->request->data['Feed']['category_id'];
+		if (isset($user['role']) && $user['role'] === 'admin')
+			return true;
+		elseif ($this->Feed->Category->isOwnedBy($articleCategoryId, $this->Session->read('Auth.User.id')))
+			return true;
+
+		return parent::isAuthorized($user);
+	}
+
 	public function index() {
 		$this->Feed->recursive = 0;
 		$this->set('feeds', $this->paginate());
 	}
-
-/**
- * view method
- *
- * @throws NotFoundException
- * @param string $id
- * @return void
- */
+	
 	public function view($id = null) {
 		if (!$this->Feed->exists($id)) {
 			throw new NotFoundException(__('Invalid feed'));
@@ -32,11 +31,6 @@ class FeedsController extends AppController {
 		$this->set('feed', $this->Feed->find('first', $options));
 	}
 
-/**
- * add method
- *
- * @return void
- */
 	public function add() {
 		//$this->Feed->set('categories', $this->Feed->Category->find('list')); 
 		if ($this->request->is('post')) {
@@ -53,13 +47,6 @@ class FeedsController extends AppController {
 		$this->set(compact('categories'));
 	}
 
-/**
- * edit method
- *
- * @throws NotFoundException
- * @param string $id
- * @return void
- */
 	public function edit($id = null) {
 		if (!$this->Feed->exists($id)) {
 			throw new NotFoundException(__('Invalid feed'));
@@ -80,14 +67,6 @@ class FeedsController extends AppController {
 		$this->set(compact('categories'));
 	}
 
-/**
- * delete method
- *
- * @throws NotFoundException
- * @throws MethodNotAllowedException
- * @param string $id
- * @return void
- */
 	public function delete($id = null) {
 		$this->Feed->id = $id;
 		if (!$this->Feed->exists()) {

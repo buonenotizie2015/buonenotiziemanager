@@ -45,14 +45,18 @@ class AppController extends Controller {
 		),
 		'RequestHandler'
 	);
-
+	
 	public function beforeFilter() {
 		$this->Auth->allow('login', 'view');
-		//$this->Auth->allow('index', 'view');
-		//$this->Auth->allow('login');
-		
-		if($this->Auth->user())
-			$this->Auth->allow('display', 'logout');
+			
+		if($this->Auth->user()){
+			if (isset($user['role']) && $user['role'] === 'admin')
+				$this->Auth->allow();
+			else{
+				$this->Auth->deny();
+				$this->Auth->allow('index', 'view', 'display', 'logout');
+			}
+		}
 	}
 	
 	public function isAuthorized($user) {

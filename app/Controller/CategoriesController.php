@@ -1,23 +1,12 @@
 <?php
 App::uses('AppController', 'Controller');
-/**
- * Categories Controller
- *
- * @property Category $Category
- */
+
 class CategoriesController extends AppController {
 	
 	public $displayField = 'name';
 	
 	public function beforeFilter() {
 		parent::beforeFilter();
-		
-		if($this->Auth->user()){
-			if (isset($user['role']) && $user['role'] === 'admin')
-				$this->Auth->allow();
-			else
-				$this->Auth->allow('index', 'view');
-		}
 	}
 
 	public function isAuthorized($user) {

@@ -2,7 +2,21 @@
 App::uses('AppController', 'Controller');
 
 class ArticlesController extends AppController {
+	
+	public function beforeFilter() {
+		parent::beforeFilter();
+	}
 
+	public function isAuthorized($user) {
+		$articleCategoryId = $this->request->data['Article']['category_id'];
+		if (isset($user['role']) && $user['role'] === 'admin')
+			return true;
+		elseif ($this->Article->Category->isOwnedBy($articleCategoryId, $this->Session->read('Auth.User.id')))
+			return true;
+
+		return parent::isAuthorized($user);
+	}
+	
 	public function index() {
 		$this->Article->recursive = 0;
 		$this->set('articles', $this->paginate());

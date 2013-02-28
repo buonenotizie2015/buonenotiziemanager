@@ -23,6 +23,17 @@ class CategoriesController extends AppController {
 		}
 		return parent::isAuthorized($user);
 	}
+	
+	public function getCategories() {
+		//$this->autoRender = false;
+		$this->header('Content-type: application/javascript');
+		//$this->response->type(array('jsonp' => 'application/javascript'));
+		//$this->response->type('jsonp');
+		$this->layout = 'ajax';
+		$this->Category->unBindModel(array('hasMany' => array('Article'), 'hasOne' => array('Feed'), 'belongsTo' => array('ParentCategory'), 'hasAndBelongsToMany' => array('User')));
+		$this->set('categories', $this->Category->find('threaded', array('recursive' => -1)));
+		//$this->set('categories', $this->Category->generateTreeList(null, null, null, ' - '));
+	}
 
 	public function index() {
 		$this->Category->recursive = 0;

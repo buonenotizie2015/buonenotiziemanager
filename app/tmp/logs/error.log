@@ -3226,3 +3226,63 @@ Stack Trace:
 #3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(899): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2013-03-01 15:13:16 Error: Fatal Error (4): parse error in [/Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php, line 87]
+2013-03-01 15:13:16 Error: [FatalErrorException] parse error
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Error/ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'parse error', '/Users/Ipalo/Si...', 87)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/Ipalo/Si...', 87, Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/Ipalo/Si...', 87, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-01 15:13:18 Error: Fatal Error (4): parse error in [/Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php, line 87]
+2013-03-01 15:13:18 Error: [FatalErrorException] parse error
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Error/ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'parse error', '/Users/Ipalo/Si...', 87)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/Ipalo/Si...', 87, Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/Ipalo/Si...', 87, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-01 15:14:01 Error: Fatal Error (4): parse error in [/Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php, line 88]
+2013-03-01 15:14:01 Error: [FatalErrorException] parse error
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Error/ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'parse error', '/Users/Ipalo/Si...', 88)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/Ipalo/Si...', 88, Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/Ipalo/Si...', 88, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-01 15:14:03 Error: Fatal Error (4): parse error in [/Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php, line 88]
+2013-03-01 15:14:03 Error: [FatalErrorException] parse error
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Error/ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'parse error', '/Users/Ipalo/Si...', 88)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/Ipalo/Si...', 88, Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/Ipalo/Si...', 88, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-01 15:14:13 Error: Fatal Error (4): parse error in [/Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php, line 88]
+2013-03-01 15:14:13 Error: [FatalErrorException] parse error
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Error/ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'parse error', '/Users/Ipalo/Si...', 88)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/Ipalo/Si...', 88, Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/Ipalo/Si...', 88, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-01 15:14:13 Error: Fatal Error (4): parse error in [/Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php, line 88]
+2013-03-01 15:14:13 Error: [FatalErrorException] parse error
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Error/ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'parse error', '/Users/Ipalo/Si...', 88)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/Ipalo/Si...', 88, Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/Ipalo/Si...', 88, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

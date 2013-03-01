@@ -84,7 +84,8 @@ class CategoriesController extends AppController {
 			$this->Category->validator()->remove('User');
 			//set slug
 			$parentName = $this->Category->findById($this->request->data['Category']['parent_id']);
-			$this->request->data['Category']['slug'] = Inflector::slug(strtolower($parentName['Category']['name'].'_'.$this->request->data['Category']['name']));
+			$parentSlug = isset($parentName['Category']) ? $parentName['Category']['name'].'_' : '';
+			$this->request->data['Category']['slug'] = Inflector::slug(strtolower($parentSlug.$this->request->data['Category']['name']));
 			if ($this->Category->save($this->request->data)) {
 				$this->Session->setFlash(__('The category has been saved'));
 				$this->redirect(array('action' => 'view', $this->Category->id));

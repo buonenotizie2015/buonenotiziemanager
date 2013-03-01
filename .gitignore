@@ -1,4 +1,2 @@
-/app/Config
-/app/tmp
-/lib/Cake/Console/Templates/skel/tmp/
+/app/Config/database.php
 .DS_Store

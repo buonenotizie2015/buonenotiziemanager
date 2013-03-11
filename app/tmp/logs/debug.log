@@ -64,3 +64,183 @@ Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
 Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
 [main] - APP/webroot/index.php, line 97
 
+2013-03-08 17:04:01 Notice: Notice (8): Undefined variable: articles in [/Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/View/Categories/json/view.ctp, line 3]
+Trace:
+include - APP/View/Categories/json/view.ctp, line 3
+View::_evaluate() - CORE/Cake/View/View.php, line 947
+View::_render() - CORE/Cake/View/View.php, line 909
+View::render() - CORE/Cake/View/View.php, line 470
+JsonView::render() - CORE/Cake/View/JsonView.php, line 88
+Controller::render() - CORE/Cake/Controller/Controller.php, line 947
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 97
+
+2013-03-08 17:04:19 Notice: Notice (8): Undefined variable: articles in [/Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/View/Categories/json/view.ctp, line 3]
+Trace:
+include - APP/View/Categories/json/view.ctp, line 3
+View::_evaluate() - CORE/Cake/View/View.php, line 947
+View::_render() - CORE/Cake/View/View.php, line 909
+View::render() - CORE/Cake/View/View.php, line 470
+JsonView::render() - CORE/Cake/View/JsonView.php, line 88
+Controller::render() - CORE/Cake/Controller/Controller.php, line 947
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 97
+
+2013-03-08 17:06:25 Notice: Notice (8): Undefined variable: articles in [/Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/View/Categories/json/view.ctp, line 3]
+Trace:
+include - APP/View/Categories/json/view.ctp, line 3
+View::_evaluate() - CORE/Cake/View/View.php, line 947
+View::_render() - CORE/Cake/View/View.php, line 909
+View::render() - CORE/Cake/View/View.php, line 470
+JsonView::render() - CORE/Cake/View/JsonView.php, line 88
+Controller::render() - CORE/Cake/Controller/Controller.php, line 947
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 97
+
+2013-03-08 17:06:26 Notice: Notice (8): Undefined variable: articles in [/Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/View/Categories/json/view.ctp, line 3]
+Trace:
+include - APP/View/Categories/json/view.ctp, line 3
+View::_evaluate() - CORE/Cake/View/View.php, line 947
+View::_render() - CORE/Cake/View/View.php, line 909
+View::render() - CORE/Cake/View/View.php, line 470
+JsonView::render() - CORE/Cake/View/JsonView.php, line 88
+Controller::render() - CORE/Cake/Controller/Controller.php, line 947
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 97
+
+2013-03-08 17:08:34 Notice: Notice (8): Undefined variable: articles in [/Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/View/Categories/json/view.ctp, line 3]
+Trace:
+include - APP/View/Categories/json/view.ctp, line 3
+View::_evaluate() - CORE/Cake/View/View.php, line 947
+View::_render() - CORE/Cake/View/View.php, line 909
+View::render() - CORE/Cake/View/View.php, line 470
+JsonView::render() - CORE/Cake/View/JsonView.php, line 88
+Controller::render() - CORE/Cake/Controller/Controller.php, line 947
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 97
+
+2013-03-08 17:08:35 Notice: Notice (8): Undefined variable: articles in [/Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/View/Categories/json/view.ctp, line 3]
+Trace:
+include - APP/View/Categories/json/view.ctp, line 3
+View::_evaluate() - CORE/Cake/View/View.php, line 947
+View::_render() - CORE/Cake/View/View.php, line 909
+View::render() - CORE/Cake/View/View.php, line 470
+JsonView::render() - CORE/Cake/View/JsonView.php, line 88
+Controller::render() - CORE/Cake/Controller/Controller.php, line 947
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 97
+
+2013-03-08 17:08:55 Notice: Notice (8): Undefined variable: categories in [/Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/View/Categories/json/view.ctp, line 3]
+Trace:
+include - APP/View/Categories/json/view.ctp, line 3
+View::_evaluate() - CORE/Cake/View/View.php, line 947
+View::_render() - CORE/Cake/View/View.php, line 909
+View::render() - CORE/Cake/View/View.php, line 470
+JsonView::render() - CORE/Cake/View/JsonView.php, line 88
+Controller::render() - CORE/Cake/Controller/Controller.php, line 947
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 97
+
+2013-03-08 17:09:55 Notice: Notice (8): Undefined variable: categories in [/Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/View/Categories/json/view.ctp, line 3]
+Trace:
+include - APP/View/Categories/json/view.ctp, line 3
+View::_evaluate() - CORE/Cake/View/View.php, line 947
+View::_render() - CORE/Cake/View/View.php, line 909
+View::render() - CORE/Cake/View/View.php, line 470
+JsonView::render() - CORE/Cake/View/JsonView.php, line 88
+Controller::render() - CORE/Cake/Controller/Controller.php, line 947
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 97
+
+2013-03-08 17:10:10 Notice: Notice (8): Undefined variable: categories in [/Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/View/Categories/json/view.ctp, line 3]
+Trace:
+include - APP/View/Categories/json/view.ctp, line 3
+View::_evaluate() - CORE/Cake/View/View.php, line 947
+View::_render() - CORE/Cake/View/View.php, line 909
+View::render() - CORE/Cake/View/View.php, line 470
+JsonView::render() - CORE/Cake/View/JsonView.php, line 88
+Controller::render() - CORE/Cake/Controller/Controller.php, line 947
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 97
+
+2013-03-08 17:11:17 Notice: Notice (8): Undefined variable: categories in [/Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/View/Categories/json/view.ctp, line 3]
+Trace:
+include - APP/View/Categories/json/view.ctp, line 3
+View::_evaluate() - CORE/Cake/View/View.php, line 947
+View::_render() - CORE/Cake/View/View.php, line 909
+View::render() - CORE/Cake/View/View.php, line 470
+JsonView::render() - CORE/Cake/View/JsonView.php, line 88
+Controller::render() - CORE/Cake/Controller/Controller.php, line 947
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 97
+
+2013-03-08 17:18:05 Notice: Notice (8): Undefined variable: categories in [/Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/View/Categories/json/view.ctp, line 3]
+Trace:
+include - APP/View/Categories/json/view.ctp, line 3
+View::_evaluate() - CORE/Cake/View/View.php, line 947
+View::_render() - CORE/Cake/View/View.php, line 909
+View::render() - CORE/Cake/View/View.php, line 470
+JsonView::render() - CORE/Cake/View/JsonView.php, line 88
+Controller::render() - CORE/Cake/Controller/Controller.php, line 947
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 97
+
+2013-03-08 17:18:06 Notice: Notice (8): Undefined variable: categories in [/Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/View/Categories/json/view.ctp, line 3]
+Trace:
+include - APP/View/Categories/json/view.ctp, line 3
+View::_evaluate() - CORE/Cake/View/View.php, line 947
+View::_render() - CORE/Cake/View/View.php, line 909
+View::render() - CORE/Cake/View/View.php, line 470
+JsonView::render() - CORE/Cake/View/JsonView.php, line 88
+Controller::render() - CORE/Cake/Controller/Controller.php, line 947
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 97
+
+2013-03-08 17:23:55 Notice: Notice (8): Undefined variable: categories in [/Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/View/Categories/json/view.ctp, line 3]
+Trace:
+include - APP/View/Categories/json/view.ctp, line 3
+View::_evaluate() - CORE/Cake/View/View.php, line 947
+View::_render() - CORE/Cake/View/View.php, line 909
+View::render() - CORE/Cake/View/View.php, line 470
+JsonView::render() - CORE/Cake/View/JsonView.php, line 88
+Controller::render() - CORE/Cake/Controller/Controller.php, line 947
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 97
+
+2013-03-08 17:27:49 Notice: Notice (8): Undefined variable: categories in [/Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/View/Categories/json/view.ctp, line 3]
+Trace:
+include - APP/View/Categories/json/view.ctp, line 3
+View::_evaluate() - CORE/Cake/View/View.php, line 947
+View::_render() - CORE/Cake/View/View.php, line 909
+View::render() - CORE/Cake/View/View.php, line 470
+JsonView::render() - CORE/Cake/View/JsonView.php, line 88
+Controller::render() - CORE/Cake/Controller/Controller.php, line 947
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 97
+
+2013-03-08 17:56:43 Notice: Notice (8): Undefined index: callback in [/Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/View/Categories/json/view.ctp, line 3]
+Trace:
+include - APP/View/Categories/json/view.ctp, line 3
+View::_evaluate() - CORE/Cake/View/View.php, line 947
+View::_render() - CORE/Cake/View/View.php, line 909
+View::render() - CORE/Cake/View/View.php, line 470
+JsonView::render() - CORE/Cake/View/JsonView.php, line 88
+Controller::render() - CORE/Cake/Controller/Controller.php, line 947
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 97
+

@@ -78,7 +78,7 @@ class ArticlesController extends AppController {
 			throw new NotFoundException(__('Invalid article'));
 		}
 		$this->request->onlyAllow('post', 'delete');
-		if ($this->Article->delete()) {
+		if ($this->Article->delete($id, true)) {
 			$this->Session->setFlash(__('Article deleted'));
 			$this->redirect(array('action' => 'index'));
 		}

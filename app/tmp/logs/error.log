@@ -3286,3 +3286,222 @@ Stack Trace:
 #3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(899): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2013-03-08 12:40:03 Error: [NotFoundException] Invalid love
+Request URL: /buonenotizie.it/feedmanager_app_bn/loves/delete
+Stack Trace:
+#0 [internal function]: LovesController->delete()
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(LovesController), Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(LovesController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-08 14:44:52 Error: [MissingViewException] View file "/Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/View/Feeds/rss/view.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/View/Feeds/rss/view.ctp',
+)
+Request URL: /buonenotizie.it/feedmanager_app_bn/feeds/view/7.rss
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/View/View.php(467): View->_getViewFileName(NULL)
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(947): View->render(NULL, NULL)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(FeedsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-08 14:46:37 Error: [NotFoundException] Object not found
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/37.json
+Stack Trace:
+#0 [internal function]: CategoriesController->view('37.json')
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-08 14:46:57 Error: [NotFoundException] Object not found
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/37.json
+Stack Trace:
+#0 [internal function]: CategoriesController->view('37.json')
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-08 14:48:58 Error: [MissingViewException] View file "/Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/View/Categories/json/view.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/View/Categories/json/view.ctp',
+)
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/37.json
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/View/JsonView.php(87): View->_getViewFileName(NULL)
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(947): JsonView->render(NULL, NULL)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-08 14:55:06 Error: Fatal Error (1): Call to undefined method RequestHandlerComponent::isJson() in [/Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php, line 66]
+2013-03-08 14:55:06 Error: [FatalErrorException] Call to undefined method RequestHandlerComponent::isJson()
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/37.json
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Error/ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/Ipalo/Si...', 66)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/Ipalo/Si...', 66, Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/Ipalo/Si...', 66, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-08 14:56:04 Error: Fatal Error (4): parse error in [/Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php, line 67]
+2013-03-08 14:56:04 Error: [FatalErrorException] parse error
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/37.json
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Error/ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'parse error', '/Users/Ipalo/Si...', 67)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/Ipalo/Si...', 67, Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/Ipalo/Si...', 67, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-08 14:56:06 Error: Fatal Error (4): parse error in [/Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php, line 67]
+2013-03-08 14:56:06 Error: [FatalErrorException] parse error
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/37.json
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Error/ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'parse error', '/Users/Ipalo/Si...', 67)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/Ipalo/Si...', 67, Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/Ipalo/Si...', 67, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-08 14:58:04 Error: Fatal Error (1): Call to undefined method RequestHandlerComponent::isJson() in [/Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php, line 68]
+2013-03-08 14:58:04 Error: [FatalErrorException] Call to undefined method RequestHandlerComponent::isJson()
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/37.json
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Error/ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/Ipalo/Si...', 68)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/Ipalo/Si...', 68, Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/Ipalo/Si...', 68, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-08 14:59:04 Error: Fatal Error (1): Call to undefined method RequestHandlerComponent::isJson() in [/Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php, line 68]
+2013-03-08 14:59:04 Error: [FatalErrorException] Call to undefined method RequestHandlerComponent::isJson()
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/37.json
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Error/ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/Ipalo/Si...', 68)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/Ipalo/Si...', 68, Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/Ipalo/Si...', 68, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-08 14:59:11 Error: Fatal Error (1): Call to undefined method RequestHandlerComponent::isJson() in [/Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php, line 68]
+2013-03-08 14:59:11 Error: [FatalErrorException] Call to undefined method RequestHandlerComponent::isJson()
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/37.json
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Error/ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/Ipalo/Si...', 68)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/Ipalo/Si...', 68, Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/Ipalo/Si...', 68, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-08 15:04:43 Error: [NotFoundException] Object not found
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/37.rss
+Stack Trace:
+#0 [internal function]: CategoriesController->view('37.rss')
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-08 15:05:08 Error: [NotFoundException] Object not found
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/37.rss
+Stack Trace:
+#0 [internal function]: CategoriesController->view('37.rss')
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-08 15:05:23 Error: [NotFoundException] Object not found
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/37.rss
+Stack Trace:
+#0 [internal function]: CategoriesController->view('37.rss')
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-08 15:05:25 Error: [NotFoundException] Object not found
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/37.rss
+Stack Trace:
+#0 [internal function]: CategoriesController->view('37.rss')
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-08 15:05:33 Error: [NotFoundException] Object not found
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/37.rss
+Stack Trace:
+#0 [internal function]: CategoriesController->view('37.rss')
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-08 15:05:52 Error: [NotFoundException] Object not found
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/37.rss
+Stack Trace:
+#0 [internal function]: CategoriesController->view('37.rss')
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-08 15:06:03 Error: [NotFoundException] Object not found
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.rss
+Stack Trace:
+#0 [internal function]: CategoriesController->view('societa_repubbl...')
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-08 15:06:05 Error: [NotFoundException] Object not found
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.rss
+Stack Trace:
+#0 [internal function]: CategoriesController->view('societa_repubbl...')
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-08 15:06:38 Error: [NotFoundException] Object not found
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.rss
+Stack Trace:
+#0 [internal function]: CategoriesController->view('societa_repubbl...')
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-08 15:06:51 Error: [NotFoundException] Object not found
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.rss
+Stack Trace:
+#0 [internal function]: CategoriesController->view('societa_repubbl...')
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-08 17:02:34 Error: [NotFoundException] Wrong object request
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/
+Stack Trace:
+#0 [internal function]: CategoriesController->view()
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-08 17:39:52 Error: [MissingControllerException] Controller class XHRController could not be found.
+Exception Attributes: array (
+  'class' => 'XHRController',
+  'plugin' => NULL,
+)
+Request URL: /buonenotizie.it/feedmanager_app_bn/XHR/
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

@@ -32,7 +32,7 @@
 	Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
 
 	//check for rss request
-	Router::parseExtensions('rss');
+	Router::parseExtensions('rss', 'json');
 	
 	//routing for smart url
 	//Router::connect('/categories/*', array('controller' => 'categories', 'action' => 'index'));

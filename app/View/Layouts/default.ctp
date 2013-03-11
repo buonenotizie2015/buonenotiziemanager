@@ -28,12 +28,13 @@
 					<ul class="nav">
 						<?php if($this->Session->check('Auth.User')) : ?>
 						<li><?php echo $this->Html->link('Dashboard', '/'); ?></li>
-						<?php if ($this->Session->read('Auth.User.role') === 'admin') : ?>
-							<li><?php echo $this->Html->link('Users', array('controller' => 'users', 'action' => 'index'));?></li>
-						<?php endif; ?>
 						<li><?php echo $this->Html->link('Categories', array('controller' => 'categories', 'action' => 'index'));?></li>
 						<li><?php echo $this->Html->link('Feeds', array('controller' => 'feeds', 'action' => 'index'));?></li>
 						<li><?php echo $this->Html->link('Articles', array('controller' => 'articles', 'action' => 'index'));?></li>
+						<?php if ($this->Session->read('Auth.User.role') === 'admin') : ?>
+							<li><?php echo $this->Html->link('Users', array('controller' => 'users', 'action' => 'index'));?></li>
+							<li><?php echo $this->Html->link('Loves', array('controller' => 'loves', 'action' => 'index'));?></li>
+						<?php endif; ?>
 						<?php endif; ?>
 						<li>
 							<?php echo $this->Session->check('Auth.User')

@@ -82,6 +82,22 @@ class Article extends AppModel {
 		)
 	);
 	
+	public $hasMany = array(
+		'Love' => array(
+			'className' => 'Love',
+			'foreignKey' => 'article_id',
+			'dependent' => true,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
+		)
+	);
+	
 	public function isOwnedBy($category, $user) {
 		return $this->Category->UsersCategory->field('category_id', array('category_id' => $category, 'user_id' => $user)) === $category;
 	}

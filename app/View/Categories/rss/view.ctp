@@ -7,7 +7,6 @@ $this->set('channelData', array(
 	'language' => 'it-it'
 ));
 
-
 foreach ($articles as $article) {
 	echo $this->Rss->item(array(), array(
 		'title' => $article['Article']['title'],

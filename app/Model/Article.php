@@ -78,7 +78,7 @@ class Article extends AppModel {
 			'foreignKey' => 'category_id',
 			'conditions' => '',
 			'fields' => '',
-			'order' => ''
+			'order' => 'Article.pubDate DESC'
 		)
 	);
 	

@@ -54,12 +54,36 @@ class CategoriesController extends AppController {
 		$this->set('category', $category);
 		
 		//Handling request Rss or Json
-		$articles = $this->Category->Article->find('all', array(
-			'limit' => 20,
-			'order' => 'Article.pubDate DESC',
-			'conditions' => array('Article.category_id =' => $category['Category']['id'])
-		));
-		return $this->set(compact('articles'));
+		/*$articles = $this->Category->Article->find('all',
+			array(
+				'limit' => 20,
+				'conditions' => array('Article.category_id =' => $category['Category']['id']),
+				'joins' => array(array('table' => 'categories',
+					'alias' => 'ParentCategory',
+					'type' => 'LEFT',
+					'conditions' => array(
+ 						'ParentCategory.id = '.$category['Category']['parent_id'],
+					),
+					'fields' => 'ParentCategory.name'
+				))
+			)
+		);*/
+		$articles = $this->Category->Article->find('all',
+			array(
+				'limit' => 20,
+				'conditions' => array('Article.category_id =' => $category['Category']['id']),
+				'joins' => array(
+					array(
+						'table' => 'Categories',
+						'alias' => 'ParentCategory',
+						'type' => 'left',
+						'conditions' => array('ParentCategory.id =' => $category['Category']['parent_id'] ),
+					)
+				),
+				'fields' => array('Article.*', 'Category.*', 'ParentCategory.name')
+			)
+		);
+		$this->set(compact('articles'));
 	}
 	
 	public function news($param = null) {

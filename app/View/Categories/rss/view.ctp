@@ -1,4 +1,5 @@
-<?php 
+<?php
+Configure::write('debug', 0);
 App::uses('Sanitize', 'Utility');
 
 $this->set('channelData', array(

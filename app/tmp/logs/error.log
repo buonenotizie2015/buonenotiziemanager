@@ -3505,3 +3505,985 @@ Request URL: /buonenotizie.it/feedmanager_app_bn/XHR/
 Stack Trace:
 #0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2013-03-12 11:48:38 Error: Fatal Error (4): parse error, expecting `')'' in [/Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php, line 61]
+2013-03-12 11:48:38 Error: [FatalErrorException] parse error, expecting `')''
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.json
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Error/ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/Ipalo/Si...', 61)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/Ipalo/Si...', 61, Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/Ipalo/Si...', 61, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-12 11:48:40 Error: Fatal Error (4): parse error, expecting `')'' in [/Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php, line 61]
+2013-03-12 11:48:40 Error: [FatalErrorException] parse error, expecting `')''
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.json
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Error/ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/Ipalo/Si...', 61)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/Ipalo/Si...', 61, Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/Ipalo/Si...', 61, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-12 11:48:49 Error: Fatal Error (4): parse error in [/Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php, line 61]
+2013-03-12 11:48:49 Error: [FatalErrorException] parse error
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.json
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Error/ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'parse error', '/Users/Ipalo/Si...', 61)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/Ipalo/Si...', 61, Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/Ipalo/Si...', 61, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-12 11:48:51 Error: Fatal Error (4): parse error in [/Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php, line 61]
+2013-03-12 11:48:51 Error: [FatalErrorException] parse error
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.json
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Error/ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'parse error', '/Users/Ipalo/Si...', 61)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/Ipalo/Si...', 61, Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/Ipalo/Si...', 61, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-12 11:48:56 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Article.Article' in 'field list'
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.json
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Article...', Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Article...', Array, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Article...', false)
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Model.php(2674): DboSource->read(Object(Article), Array)
+#5 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php(62): Model->find('all', Array)
+#6 [internal function]: CategoriesController->view('societa_repubbl...')
+#7 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#8 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#10 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-03-12 11:49:22 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1051 Unknown table 'Love'
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.json
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Article...', Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Article...', Array, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Article...', false)
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Model.php(2674): DboSource->read(Object(Article), Array)
+#5 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php(62): Model->find('all', Array)
+#6 [internal function]: CategoriesController->view('societa_repubbl...')
+#7 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#8 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#10 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-03-12 11:51:20 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1051 Unknown table 'ParentCategory'
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.json
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Article...', Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Article...', Array, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Article...', false)
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Model.php(2674): DboSource->read(Object(Article), Array)
+#5 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php(62): Model->find('all', Array)
+#6 [internal function]: CategoriesController->view('societa_repubbl...')
+#7 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#8 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#10 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-03-12 11:51:48 Error: [NotFoundException] Object not found
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/%5C%22http:%5C/%5C/www.repubblica.it%5C/images%5C/2013%5C/02%5C/20%5C/030944236-869dded2-d488-4dd8-bd1f-d73b12c8263c.jpg%5C%22
+Stack Trace:
+#0 [internal function]: CategoriesController->view('\', 'www.repubblica....', 'images\', '2013\', '02\', '20\', '030944236-869dd...')
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-12 11:51:48 Error: [NotFoundException] Object not found
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/%5C%22http:%5C/%5C/www.repubblica.it%5C/images%5C/2013%5C/03%5C/02%5C/024744740-174bc41b-7111-4b04-b0bb-a501e54b9402.jpg%5C%22
+Stack Trace:
+#0 [internal function]: CategoriesController->view('\', 'www.repubblica....', 'images\', '2013\', '03\', '02\', '024744740-174bc...')
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-12 11:51:48 Error: [NotFoundException] Object not found
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/%5C%22http:%5C/%5C/www.repubblica.it%5C/images%5C/2013%5C/02%5C/24%5C/145507928-fb35615a-1327-4de6-9a20-cd2925f1fb2e.jpg%5C%22
+Stack Trace:
+#0 [internal function]: CategoriesController->view('\', 'www.repubblica....', 'images\', '2013\', '02\', '24\', '145507928-fb356...')
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-12 11:54:09 Error: Fatal Error (4): parse error, expecting `')'' in [/Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Model/Category.php, line 21]
+2013-03-12 11:54:09 Error: [FatalErrorException] parse error, expecting `')''
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.json
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Error/ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/Ipalo/Si...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/Ipalo/Si...', 21, Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/Ipalo/Si...', 21, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-12 11:54:19 Error: [NotFoundException] Object not found
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/%5C%22http:%5C/%5C/www.repubblica.it%5C/images%5C/2013%5C/02%5C/24%5C/145507928-fb35615a-1327-4de6-9a20-cd2925f1fb2e.jpg%5C%22
+Stack Trace:
+#0 [internal function]: CategoriesController->view('\', 'www.repubblica....', 'images\', '2013\', '02\', '24\', '145507928-fb356...')
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-12 11:54:19 Error: [NotFoundException] Object not found
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/%5C%22http:%5C/%5C/www.repubblica.it%5C/images%5C/2013%5C/03%5C/02%5C/024744740-174bc41b-7111-4b04-b0bb-a501e54b9402.jpg%5C%22
+Stack Trace:
+#0 [internal function]: CategoriesController->view('\', 'www.repubblica....', 'images\', '2013\', '03\', '02\', '024744740-174bc...')
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-12 11:54:19 Error: [NotFoundException] Object not found
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/%5C%22http:%5C/%5C/www.repubblica.it%5C/images%5C/2013%5C/02%5C/20%5C/030944236-869dded2-d488-4dd8-bd1f-d73b12c8263c.jpg%5C%22
+Stack Trace:
+#0 [internal function]: CategoriesController->view('\', 'www.repubblica....', 'images\', '2013\', '02\', '20\', '030944236-869dd...')
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-12 11:56:37 Error: [NotFoundException] Object not found
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/%5C%22http:%5C/%5C/www.repubblica.it%5C/images%5C/2013%5C/02%5C/20%5C/030944236-869dded2-d488-4dd8-bd1f-d73b12c8263c.jpg%5C%22
+Stack Trace:
+#0 [internal function]: CategoriesController->view('\', 'www.repubblica....', 'images\', '2013\', '02\', '20\', '030944236-869dd...')
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-12 11:56:37 Error: [NotFoundException] Object not found
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/%5C%22http:%5C/%5C/www.repubblica.it%5C/images%5C/2013%5C/02%5C/24%5C/145507928-fb35615a-1327-4de6-9a20-cd2925f1fb2e.jpg%5C%22
+Stack Trace:
+#0 [internal function]: CategoriesController->view('\', 'www.repubblica....', 'images\', '2013\', '02\', '24\', '145507928-fb356...')
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-12 11:56:37 Error: [NotFoundException] Object not found
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/%5C%22http:%5C/%5C/www.repubblica.it%5C/images%5C/2013%5C/03%5C/02%5C/024744740-174bc41b-7111-4b04-b0bb-a501e54b9402.jpg%5C%22
+Stack Trace:
+#0 [internal function]: CategoriesController->view('\', 'www.repubblica....', 'images\', '2013\', '03\', '02\', '024744740-174bc...')
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-12 11:57:11 Error: [NotFoundException] Object not found
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/%5C%22http:%5C/%5C/www.repubblica.it%5C/images%5C/2013%5C/03%5C/02%5C/024744740-174bc41b-7111-4b04-b0bb-a501e54b9402.jpg%5C%22
+Stack Trace:
+#0 [internal function]: CategoriesController->view('\', 'www.repubblica....', 'images\', '2013\', '03\', '02\', '024744740-174bc...')
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-12 11:57:11 Error: [NotFoundException] Object not found
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/%5C%22http:%5C/%5C/www.repubblica.it%5C/images%5C/2013%5C/02%5C/24%5C/145507928-fb35615a-1327-4de6-9a20-cd2925f1fb2e.jpg%5C%22
+Stack Trace:
+#0 [internal function]: CategoriesController->view('\', 'www.repubblica....', 'images\', '2013\', '02\', '24\', '145507928-fb356...')
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-12 11:57:11 Error: [NotFoundException] Object not found
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/%5C%22http:%5C/%5C/www.repubblica.it%5C/images%5C/2013%5C/02%5C/20%5C/030944236-869dded2-d488-4dd8-bd1f-d73b12c8263c.jpg%5C%22
+Stack Trace:
+#0 [internal function]: CategoriesController->view('\', 'www.repubblica....', 'images\', '2013\', '02\', '20\', '030944236-869dd...')
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-12 12:02:33 Error: Fatal Error (4): parse error, expecting `')'' in [/Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php, line 62]
+2013-03-12 12:02:33 Error: [FatalErrorException] parse error, expecting `')''
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.json?callback=jQuery190049766180305152696_1363089752822
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Error/ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/Ipalo/Si...', 62)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/Ipalo/Si...', 62, Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/Ipalo/Si...', 62, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-12 12:02:34 Error: Fatal Error (4): parse error, expecting `')'' in [/Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php, line 62]
+2013-03-12 12:02:34 Error: [FatalErrorException] parse error, expecting `')''
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.json?callback=jQuery190049766180305152696_1363089752822
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Error/ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/Ipalo/Si...', 62)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/Ipalo/Si...', 62, Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/Ipalo/Si...', 62, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-12 12:02:35 Error: Fatal Error (4): parse error, expecting `')'' in [/Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php, line 62]
+2013-03-12 12:02:35 Error: [FatalErrorException] parse error, expecting `')''
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.json?callback=jQuery190049766180305152696_1363089752822
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Error/ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/Ipalo/Si...', 62)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/Ipalo/Si...', 62, Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/Ipalo/Si...', 62, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-12 12:02:44 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Category.lft' in 'order clause'
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.json?callback=jQuery19006226764078635386_1363089763362
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `ParentC...', Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `ParentC...', Array, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(1274): DboSource->fetchAll('SELECT `ParentC...', false)
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(1294): DboSource->queryAssociation(Object(Category), Object(Category), 'belongsTo', 'ParentCategory', Array, Array, true, Array, 0, Array)
+#5 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(1115): DboSource->queryAssociation(Object(Article), Object(Category), 'belongsTo', 'Category', Array, Array, true, Array, 1, Array)
+#6 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Model.php(2674): DboSource->read(Object(Article), Array)
+#7 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php(63): Model->find('all', Array)
+#8 [internal function]: CategoriesController->view('societa_repubbl...')
+#9 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#10 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#12 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-03-12 12:03:09 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Category.lft' in 'order clause'
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.json?callback=jQuery19008986721347840659_1363089789632
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `ParentC...', Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `ParentC...', Array, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(1274): DboSource->fetchAll('SELECT `ParentC...', false)
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(1294): DboSource->queryAssociation(Object(Category), Object(Category), 'belongsTo', 'ParentCategory', Array, Array, true, Array, 0, Array)
+#5 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(1115): DboSource->queryAssociation(Object(Article), Object(Category), 'belongsTo', 'Category', Array, Array, true, Array, 1, Array)
+#6 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Model.php(2674): DboSource->read(Object(Article), Array)
+#7 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php(62): Model->find('all', Array)
+#8 [internal function]: CategoriesController->view('societa_repubbl...')
+#9 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#10 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#12 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-03-12 12:03:17 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Category.lft' in 'order clause'
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.json
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `ParentC...', Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `ParentC...', Array, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(1274): DboSource->fetchAll('SELECT `ParentC...', false)
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(1294): DboSource->queryAssociation(Object(Category), Object(Category), 'belongsTo', 'ParentCategory', Array, Array, true, Array, 0, Array)
+#5 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(1115): DboSource->queryAssociation(Object(Article), Object(Category), 'belongsTo', 'Category', Array, Array, true, Array, 1, Array)
+#6 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Model.php(2674): DboSource->read(Object(Article), Array)
+#7 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php(62): Model->find('all', Array)
+#8 [internal function]: CategoriesController->view('societa_repubbl...')
+#9 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#10 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#12 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-03-12 12:04:55 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Category.lft' in 'order clause'
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.json
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `ParentC...', Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `ParentC...', Array, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(1274): DboSource->fetchAll('SELECT `ParentC...', false)
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(1294): DboSource->queryAssociation(Object(Category), Object(Category), 'belongsTo', 'ParentCategory', Array, Array, true, Array, 0, Array)
+#5 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(1115): DboSource->queryAssociation(Object(Article), Object(Category), 'belongsTo', 'Category', Array, Array, true, Array, 1, Array)
+#6 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Model.php(2674): DboSource->read(Object(Article), Array)
+#7 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php(62): Model->find('all', Array)
+#8 [internal function]: CategoriesController->view('societa_repubbl...')
+#9 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#10 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#12 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-03-12 12:06:09 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ParentCategory.id' in 'where clause'
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.json?callback=jQuery19003646334298703887_1363089968596
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Article...', Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Article...', Array, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Article...', false)
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Model.php(2674): DboSource->read(Object(Article), Array)
+#5 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php(62): Model->find('all', Array)
+#6 [internal function]: CategoriesController->view('societa_repubbl...')
+#7 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#8 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#10 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-03-12 12:06:17 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ParentCategory.id' in 'where clause'
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.json
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Article...', Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Article...', Array, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Article...', false)
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Model.php(2674): DboSource->read(Object(Article), Array)
+#5 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php(62): Model->find('all', Array)
+#6 [internal function]: CategoriesController->view('societa_repubbl...')
+#7 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#8 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#10 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-03-12 12:09:16 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'join_table'
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.json
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Article...', Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Article...', Array, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Article...', false)
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Model.php(2674): DboSource->read(Object(Article), Array)
+#5 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php(63): Model->find('all', Array)
+#6 [internal function]: CategoriesController->view('societa_repubbl...')
+#7 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#8 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#10 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-03-12 12:09:42 Error: Fatal Error (4): parse error in [/Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php, line 62]
+2013-03-12 12:09:42 Error: [FatalErrorException] parse error
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.json
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Error/ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'parse error', '/Users/Ipalo/Si...', 62)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/Ipalo/Si...', 62, Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/Ipalo/Si...', 62, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-12 12:09:50 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Article.pubDate' in 'order clause'
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.json
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Love`.`...', Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Love`.`...', Array, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(1342): DboSource->fetchAll('SELECT `Love`.`...', false)
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(1204): DboSource->fetchAssociated(Object(Article), 'SELECT `Love`.`...', Array)
+#5 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(1115): DboSource->queryAssociation(Object(Article), Object(Love), 'hasMany', 'Love', Array, Array, true, Array, 0, Array)
+#6 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Model.php(2674): DboSource->read(Object(Article), Array)
+#7 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php(62): Model->find('all', Array)
+#8 [internal function]: CategoriesController->view('societa_repubbl...')
+#9 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#10 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#12 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-03-12 12:17:42 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ParentCategory.name' in 'field list'
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.json?callback=jQuery190031147586241819825_1363090662287
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Article...', Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Article...', Array, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Article...', false)
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Model.php(2674): DboSource->read(Object(Article), Array)
+#5 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php(62): Model->find('all', Array)
+#6 [internal function]: CategoriesController->view('societa_repubbl...')
+#7 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#8 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#10 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-03-12 12:17:48 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ParentCategory.name' in 'field list'
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.json
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Article...', Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Article...', Array, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Article...', false)
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Model.php(2674): DboSource->read(Object(Article), Array)
+#5 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php(62): Model->find('all', Array)
+#6 [internal function]: CategoriesController->view('societa_repubbl...')
+#7 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#8 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#10 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-03-12 13:33:49 Error: Fatal Error (4): parse error, expecting `')'' in [/Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php, line 61]
+2013-03-12 13:33:49 Error: [FatalErrorException] parse error, expecting `')''
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.json?callback=jQuery19007260043622620523_1363095229087
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Error/ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/Ipalo/Si...', 61)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/Ipalo/Si...', 61, Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/Ipalo/Si...', 61, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-12 13:33:50 Error: Fatal Error (4): parse error, expecting `')'' in [/Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php, line 61]
+2013-03-12 13:33:50 Error: [FatalErrorException] parse error, expecting `')''
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.json?callback=jQuery19007260043622620523_1363095229087
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Error/ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/Ipalo/Si...', 61)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/Ipalo/Si...', 61, Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/Ipalo/Si...', 61, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-12 13:33:51 Error: Fatal Error (4): parse error, expecting `')'' in [/Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php, line 61]
+2013-03-12 13:33:51 Error: [FatalErrorException] parse error, expecting `')''
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.json?callback=jQuery19007260043622620523_1363095229087
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Error/ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/Ipalo/Si...', 61)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/Ipalo/Si...', 61, Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/Ipalo/Si...', 61, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-12 13:33:55 Error: Fatal Error (4): parse error, expecting `')'' in [/Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php, line 61]
+2013-03-12 13:33:55 Error: [FatalErrorException] parse error, expecting `')''
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.json
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Error/ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/Ipalo/Si...', 61)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/Ipalo/Si...', 61, Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/Ipalo/Si...', 61, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-12 13:34:00 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Category.ParentCategory' in 'field list'
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.json
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Categor...', Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Categor...', false)
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Model.php(2674): DboSource->read(Object(Article), Array)
+#5 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php(63): Model->find('all', Array)
+#6 [internal function]: CategoriesController->view('societa_repubbl...')
+#7 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#8 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#10 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-03-12 13:38:07 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'categories ParentCategory LEFT Array LEFT JOIN `feedmanager_app_bn`.`categories`' at line 1
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.json
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Article...', Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Article...', Array, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Article...', false)
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Model.php(2674): DboSource->read(Object(Article), Array)
+#5 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php(69): Model->find('all', Array)
+#6 [internal function]: CategoriesController->view('societa_repubbl...')
+#7 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#8 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#10 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-03-12 13:38:10 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'categories ParentCategory LEFT Array LEFT JOIN `feedmanager_app_bn`.`categories`' at line 1
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.json
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Article...', Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Article...', Array, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Article...', false)
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Model.php(2674): DboSource->read(Object(Article), Array)
+#5 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php(69): Model->find('all', Array)
+#6 [internal function]: CategoriesController->view('societa_repubbl...')
+#7 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#8 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#10 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-03-12 13:39:01 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'categories ParentCategory LEFT Array LEFT JOIN `feedmanager_app_bn`.`categories`' at line 1
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.json
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Article...', Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Article...', Array, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Article...', false)
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Model.php(2674): DboSource->read(Object(Article), Array)
+#5 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php(69): Model->find('all', Array)
+#6 [internal function]: CategoriesController->view('societa_repubbl...')
+#7 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#8 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#10 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-03-12 13:39:27 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'categories ParentCategory LEFT Array LEFT JOIN `feedmanager_app_bn`.`categories`' at line 1
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.json
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Article...', Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Article...', Array, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Article...', false)
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Model.php(2674): DboSource->read(Object(Article), Array)
+#5 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php(69): Model->find('all', Array)
+#6 [internal function]: CategoriesController->view('societa_repubbl...')
+#7 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#8 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#10 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-03-12 13:39:35 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'categories ParentCategory LEFT Array LEFT JOIN `feedmanager_app_bn`.`categories`' at line 1
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.json
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Article...', Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Article...', Array, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Article...', false)
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Model.php(2674): DboSource->read(Object(Article), Array)
+#5 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php(69): Model->find('all', Array)
+#6 [internal function]: CategoriesController->view('societa_repubbl...')
+#7 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#8 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#10 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-03-12 13:40:39 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Category.parent_id' in 'on clause'
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.json
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Article...', Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Article...', Array, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Article...', false)
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Model.php(2674): DboSource->read(Object(Article), Array)
+#5 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php(69): Model->find('all', Array)
+#6 [internal function]: CategoriesController->view('societa_repubbl...')
+#7 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#8 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#10 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-03-12 13:42:54 Error: Fatal Error (4): parse error, expecting `')'' in [/Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php, line 65]
+2013-03-12 13:42:54 Error: [FatalErrorException] parse error, expecting `')''
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.json
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Error/ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/Ipalo/Si...', 65)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/Ipalo/Si...', 65, Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/Ipalo/Si...', 65, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-12 13:42:56 Error: Fatal Error (4): parse error, expecting `')'' in [/Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php, line 65]
+2013-03-12 13:42:56 Error: [FatalErrorException] parse error, expecting `')''
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.json
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Error/ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/Ipalo/Si...', 65)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/Ipalo/Si...', 65, Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/Ipalo/Si...', 65, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-12 13:43:07 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LEFT JOIN `feedmanager_app_bn`.`categories` AS `Category` ON (`Article`.`categ' at line 1
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.json
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Article...', Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Article...', Array, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Article...', false)
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Model.php(2674): DboSource->read(Object(Article), Array)
+#5 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php(69): Model->find('all', Array)
+#6 [internal function]: CategoriesController->view('societa_repubbl...')
+#7 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#8 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#10 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-03-12 13:43:09 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LEFT JOIN `feedmanager_app_bn`.`categories` AS `Category` ON (`Article`.`categ' at line 1
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.json
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Article...', Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Article...', Array, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Article...', false)
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Model.php(2674): DboSource->read(Object(Article), Array)
+#5 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php(69): Model->find('all', Array)
+#6 [internal function]: CategoriesController->view('societa_repubbl...')
+#7 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#8 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#10 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-03-12 13:43:15 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Category.id' in 'on clause'
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.json
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Article...', Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Article...', Array, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Article...', false)
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Model.php(2674): DboSource->read(Object(Article), Array)
+#5 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php(69): Model->find('all', Array)
+#6 [internal function]: CategoriesController->view('societa_repubbl...')
+#7 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#8 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#10 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-03-12 13:43:17 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Category.id' in 'on clause'
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.json
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Article...', Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Article...', Array, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Article...', false)
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Model.php(2674): DboSource->read(Object(Article), Array)
+#5 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php(69): Model->find('all', Array)
+#6 [internal function]: CategoriesController->view('societa_repubbl...')
+#7 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#8 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#10 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-03-12 17:04:42 Error: Fatal Error (4): parse error, expecting `')'' in [/Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php, line 67]
+2013-03-12 17:04:42 Error: [FatalErrorException] parse error, expecting `')''
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.json
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Error/ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/Ipalo/Si...', 67)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/Ipalo/Si...', 67, Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/Ipalo/Si...', 67, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-12 17:04:44 Error: Fatal Error (4): parse error, expecting `')'' in [/Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php, line 67]
+2013-03-12 17:04:44 Error: [FatalErrorException] parse error, expecting `')''
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.json
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Error/ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/Ipalo/Si...', 67)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/Ipalo/Si...', 67, Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/Ipalo/Si...', 67, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-12 17:19:09 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Category.lft' in 'order clause'
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.json?callback=jQuery19000187875073489856_1363108748799
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `ParentC...', Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `ParentC...', Array, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(1274): DboSource->fetchAll('SELECT `ParentC...', false)
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(1294): DboSource->queryAssociation(Object(Category), Object(Category), 'belongsTo', 'ParentCategory', Array, Array, true, Array, 0, Array)
+#5 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(1115): DboSource->queryAssociation(Object(Article), Object(Category), 'belongsTo', 'Category', Array, Array, true, Array, 1, Array)
+#6 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Model.php(2674): DboSource->read(Object(Article), Array)
+#7 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php(76): Model->find('all', Array)
+#8 [internal function]: CategoriesController->view('societa_repubbl...')
+#9 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#10 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#12 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-03-12 17:19:12 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Category.lft' in 'order clause'
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.json
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `ParentC...', Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `ParentC...', Array, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(1274): DboSource->fetchAll('SELECT `ParentC...', false)
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(1294): DboSource->queryAssociation(Object(Category), Object(Category), 'belongsTo', 'ParentCategory', Array, Array, true, Array, 0, Array)
+#5 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(1115): DboSource->queryAssociation(Object(Article), Object(Category), 'belongsTo', 'Category', Array, Array, true, Array, 1, Array)
+#6 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Model.php(2674): DboSource->read(Object(Article), Array)
+#7 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php(76): Model->find('all', Array)
+#8 [internal function]: CategoriesController->view('societa_repubbl...')
+#9 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#10 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#12 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-03-12 17:19:37 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Category.lft' in 'order clause'
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.json
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `ParentC...', Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `ParentC...', Array, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(1274): DboSource->fetchAll('SELECT `ParentC...', false)
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(1294): DboSource->queryAssociation(Object(Category), Object(Category), 'belongsTo', 'ParentCategory', Array, Array, true, Array, 0, Array)
+#5 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(1115): DboSource->queryAssociation(Object(Article), Object(Category), 'belongsTo', 'Category', Array, Array, true, Array, 1, Array)
+#6 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Model.php(2674): DboSource->read(Object(Article), Array)
+#7 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php(76): Model->find('all', Array)
+#8 [internal function]: CategoriesController->view('societa_repubbl...')
+#9 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#10 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#12 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-03-12 17:23:19 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Category.lft' in 'order clause'
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.json
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `ParentC...', Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `ParentC...', Array, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(1274): DboSource->fetchAll('SELECT `ParentC...', false)
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(1294): DboSource->queryAssociation(Object(Category), Object(Category), 'belongsTo', 'ParentCategory', Array, Array, true, Array, 0, Array)
+#5 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(1115): DboSource->queryAssociation(Object(Article), Object(Category), 'belongsTo', 'Category', Array, Array, true, Array, 1, Array)
+#6 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Model.php(2674): DboSource->read(Object(Article), Array)
+#7 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php(76): Model->find('all', Array)
+#8 [internal function]: CategoriesController->view('societa_repubbl...')
+#9 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#10 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#12 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-03-12 17:23:58 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Category.lft' in 'order clause'
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.json
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `ParentC...', Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `ParentC...', Array, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(1274): DboSource->fetchAll('SELECT `ParentC...', false)
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(1294): DboSource->queryAssociation(Object(Category), Object(Category), 'belongsTo', 'ParentCategory', Array, Array, true, Array, 0, Array)
+#5 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(1115): DboSource->queryAssociation(Object(Article), Object(Category), 'belongsTo', 'Category', Array, Array, true, Array, 1, Array)
+#6 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Model.php(2674): DboSource->read(Object(Article), Array)
+#7 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php(77): Model->find('all', Array)
+#8 [internal function]: CategoriesController->view('societa_repubbl...')
+#9 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#10 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#12 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-03-12 17:27:06 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Category.lft' in 'order clause'
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.json
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `ParentC...', Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `ParentC...', Array, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(1274): DboSource->fetchAll('SELECT `ParentC...', false)
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(1294): DboSource->queryAssociation(Object(Category), Object(Category), 'belongsTo', 'ParentCategory', Array, Array, true, Array, 0, Array)
+#5 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(1115): DboSource->queryAssociation(Object(Article), Object(Category), 'belongsTo', 'Category', Array, Array, true, Array, 1, Array)
+#6 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Model.php(2674): DboSource->read(Object(Article), Array)
+#7 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php(77): Model->find('all', Array)
+#8 [internal function]: CategoriesController->view('societa_repubbl...')
+#9 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#10 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#12 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-03-12 17:28:51 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Category.lft' in 'order clause'
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.json?callback=jQuery190023727697214300236_1363109331605
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `ParentC...', Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `ParentC...', Array, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(1274): DboSource->fetchAll('SELECT `ParentC...', false)
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(1294): DboSource->queryAssociation(Object(Category), Object(Category), 'belongsTo', 'ParentCategory', Array, Array, true, Array, 0, Array)
+#5 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(1115): DboSource->queryAssociation(Object(Article), Object(Category), 'belongsTo', 'Category', Array, Array, true, Array, 1, Array)
+#6 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Model.php(2674): DboSource->read(Object(Article), Array)
+#7 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php(77): Model->find('all', Array)
+#8 [internal function]: CategoriesController->view('societa_repubbl...')
+#9 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#10 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#12 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-03-12 17:31:56 Error: Fatal Error (4): parse error, expecting `')'' in [/Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php, line 76]
+2013-03-12 17:31:56 Error: [FatalErrorException] parse error, expecting `')''
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.json?callback=jQuery1900012713852698954864_1363109516789
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Error/ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/Ipalo/Si...', 76)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/Ipalo/Si...', 76, Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/Ipalo/Si...', 76, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-12 17:31:58 Error: Fatal Error (4): parse error, expecting `')'' in [/Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php, line 76]
+2013-03-12 17:31:58 Error: [FatalErrorException] parse error, expecting `')''
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.json?callback=jQuery1900012713852698954864_1363109516789
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Error/ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/Ipalo/Si...', 76)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/Ipalo/Si...', 76, Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/Ipalo/Si...', 76, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-12 17:31:59 Error: Fatal Error (4): parse error, expecting `')'' in [/Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php, line 76]
+2013-03-12 17:31:59 Error: [FatalErrorException] parse error, expecting `')''
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.json?callback=jQuery1900012713852698954864_1363109516789
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Error/ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/Ipalo/Si...', 76)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/Ipalo/Si...', 76, Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/Ipalo/Si...', 76, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-12 17:32:03 Error: Fatal Error (4): parse error, expecting `')'' in [/Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php, line 76]
+2013-03-12 17:32:03 Error: [FatalErrorException] parse error, expecting `')''
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.json
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Error/ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/Ipalo/Si...', 76)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/Ipalo/Si...', 76, Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/Ipalo/Si...', 76, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-12 17:33:37 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ParentCategory.id' in 'where clause'
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.json?callback=jQuery190046845671014197865_1363109617241
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Article...', Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Article...', Array, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Article...', false)
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Model.php(2674): DboSource->read(Object(Article), Array)
+#5 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php(85): Model->find('all', Array)
+#6 [internal function]: CategoriesController->view('societa_repubbl...')
+#7 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#8 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#10 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-03-12 17:36:20 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Array LEFT JOIN `feedmanager_app_bn`.`categories` AS `Category` ON (`Article`.`c' at line 1
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.json?callback=jQuery19005194937474386839_1363109780682
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Article...', Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Article...', Array, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Article...', false)
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Model.php(2674): DboSource->read(Object(Article), Array)
+#5 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php(81): Model->find('all', Array)
+#6 [internal function]: CategoriesController->view('societa_repubbl...')
+#7 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#8 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#10 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-03-12 17:36:26 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Array LEFT JOIN `feedmanager_app_bn`.`categories` AS `Category` ON (`Article`.`c' at line 1
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.json
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Article...', Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Article...', Array, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Article...', false)
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Model.php(2674): DboSource->read(Object(Article), Array)
+#5 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php(81): Model->find('all', Array)
+#6 [internal function]: CategoriesController->view('societa_repubbl...')
+#7 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#8 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#10 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-03-12 17:36:29 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Array LEFT JOIN `feedmanager_app_bn`.`categories` AS `Category` ON (`Article`.`c' at line 1
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.json
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Article...', Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Article...', Array, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Article...', false)
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Model.php(2674): DboSource->read(Object(Article), Array)
+#5 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php(81): Model->find('all', Array)
+#6 [internal function]: CategoriesController->view('societa_repubbl...')
+#7 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#8 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#10 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-03-12 17:36:44 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Array LEFT JOIN `feedmanager_app_bn`.`categories` AS `Category` ON (`Article`.`c' at line 1
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.json
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Article...', Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Article...', Array, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Article...', false)
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Model.php(2674): DboSource->read(Object(Article), Array)
+#5 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php(81): Model->find('all', Array)
+#6 [internal function]: CategoriesController->view('societa_repubbl...')
+#7 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#8 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#10 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-03-12 17:36:57 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Array LEFT JOIN `feedmanager_app_bn`.`categories` AS `Category` ON (`Article`.`c' at line 1
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.json
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Article...', Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Article...', Array, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Article...', false)
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Model.php(2674): DboSource->read(Object(Article), Array)
+#5 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php(81): Model->find('all', Array)
+#6 [internal function]: CategoriesController->view('societa_repubbl...')
+#7 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#8 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#10 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-03-12 17:39:37 Error: Fatal Error (4): parse error, expecting `')'' in [/Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php, line 78]
+2013-03-12 17:39:37 Error: [FatalErrorException] parse error, expecting `')''
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.json
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Error/ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/Ipalo/Si...', 78)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/Ipalo/Si...', 78, Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/Ipalo/Si...', 78, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-12 17:40:37 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'feedmanager_app_bn.category' doesn't exist
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.json
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Article...', Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Article...', Array, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Article...', false)
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Model.php(2674): DboSource->read(Object(Article), Array)
+#5 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php(84): Model->find('all', Array)
+#6 [internal function]: CategoriesController->view('societa_repubbl...')
+#7 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#8 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#10 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-03-12 17:41:03 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Category.id' in 'on clause'
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.json
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Article...', Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Article...', Array, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Article...', false)
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Model.php(2674): DboSource->read(Object(Article), Array)
+#5 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php(84): Model->find('all', Array)
+#6 [internal function]: CategoriesController->view('societa_repubbl...')
+#7 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#8 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#10 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-03-12 17:42:40 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1051 Unknown table 'Love'
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.json
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Article...', Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Article...', Array, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Article...', false)
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Model.php(2674): DboSource->read(Object(Article), Array)
+#5 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php(85): Model->find('all', Array)
+#6 [internal function]: CategoriesController->view('societa_repubbl...')
+#7 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#8 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#10 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-03-12 17:42:48 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1051 Unknown table 'Loves'
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.json
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Article...', Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Article...', Array, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Article...', false)
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Model.php(2674): DboSource->read(Object(Article), Array)
+#5 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php(85): Model->find('all', Array)
+#6 [internal function]: CategoriesController->view('societa_repubbl...')
+#7 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#8 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#10 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-03-12 17:43:14 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ParentCategory.name' in 'field list'
+Request URL: /buonenotizie.it/feedmanager_app_bn/categories/view/societa_repubblica_it.json
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Article...', Array)
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Article...', Array, Array)
+#3 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Article...', false)
+#4 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Model/Model.php(2674): DboSource->read(Object(Article), Array)
+#5 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/Controller/CategoriesController.php(85): Model->find('all', Array)
+#6 [internal function]: CategoriesController->view('societa_repubbl...')
+#7 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#8 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#10 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}

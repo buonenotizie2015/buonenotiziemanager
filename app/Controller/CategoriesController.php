@@ -53,25 +53,13 @@ class CategoriesController extends AppController {
 			
 		$this->set('category', $category);
 		
-		//test check if request .rss extension
-		if ($this->RequestHandler->isRss() ) {
-			$articles = $this->Category->Article->find('all', array(
-				'limit' => 20,
-				'order' => 'Article.pubDate DESC',
-				'conditions' => array('Article.category_id =' => $category['Category']['id'])
-			));
-			//$articles = $this->Category->Articles->findAllByCategoryId($category['Category']['id'], array('limit' => 20));
-			return $this->set(compact('articles'));
-		}
-		elseif ($this->request->is('ajax')) {
-		    $articles = $this->Category->Article->find('all', array(
-				'limit' => 20,
-				'order' => 'Article.pubDate DESC',
-				'conditions' => array('Article.category_id =' => $category['Category']['id'])
-			));
-			//$articles = $this->Category->Articles->findAllByCategoryId($category['Category']['id'], array('limit' => 20));
-			return $this->set(compact('articles'));
-		}
+		//Handling request Rss or Json
+		$articles = $this->Category->Article->find('all', array(
+			'limit' => 20,
+			'order' => 'Article.pubDate DESC',
+			'conditions' => array('Article.category_id =' => $category['Category']['id'])
+		));
+		return $this->set(compact('articles'));
 	}
 	
 	public function news($param = null) {

@@ -72,6 +72,7 @@ class CategoriesController extends AppController {
 			array(
 				'limit' => 20,
 				'conditions' => array('Article.category_id =' => $category['Category']['id']),
+				'order' => array('Article.pubDate ASC'),
 				'joins' => array(
 					array(
 						'table' => 'Categories',

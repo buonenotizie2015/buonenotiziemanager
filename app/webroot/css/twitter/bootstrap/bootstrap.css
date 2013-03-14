@@ -6088,6 +6088,7 @@ table tr td {
 	text-align: left;
 	vertical-align: top;
 	border-bottom:1px solid #ddd;
+	word-wrap:break-word;
 }
 table tr:nth-child(even) {
 	background: #f9f9f9;

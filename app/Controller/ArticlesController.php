@@ -18,6 +18,32 @@ class ArticlesController extends AppController {
 	}
 	
 	public function index() {
+		/*TODO | BEST PRACTICE: send one xhr call form APP and articlescontroller respond with all articles in selected categories ordered by pubdate
+		$articles = $this->Article->find('all',
+			array(
+				'limit' => 20,
+				//'conditions' => array('Article.category_id =' => $article['Category']['id']),
+				'order' => array('Article.pubDate ASC'),
+				'recursive' => 0,
+				'fields' => array('Article.*', 'Category.*', 'ParentCategory.name'),
+				'joins' => array(
+					array(
+						'table' => 'Categories',
+						'alias' => 'Category',
+						'type' => 'left',
+						'conditions' => array('Article.category_id = Category.id')
+					),
+					array(
+						'table' => 'Categories',
+						'alias' => 'ParentCategory',
+						'type' => 'left',
+						'conditions' => array('ParentCategory.id = Category.parent_id')// => $article['Category']['parent_id'] ),
+					)
+				),
+			)
+		);
+		*/
+		
 		$this->Article->recursive = 0;
 		$this->set('articles', $this->paginate());
 	}

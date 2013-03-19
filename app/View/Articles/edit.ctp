@@ -8,6 +8,7 @@
 		echo $this->Form->input('link');
 		echo $this->Form->input('description');
 		echo $this->Form->input('pubDate');
+		echo $this->Form->input('image');
 		echo $this->Form->input('category_id');
 	?>
 	</fieldset>

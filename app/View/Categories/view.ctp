@@ -53,6 +53,7 @@
 			<th><?php echo __('Title'); ?></th>
 			<th><?php echo __('Description'); ?></th>
 			<th><?php echo __('Pub Date'); ?></th>
+			<th><?php echo __('Images'); ?></th>
 			<th><?php echo __('Actions'); ?></th>
 		</tr>
 		<?php
@@ -60,18 +61,17 @@
 			foreach ($feedData['rss']['channel']['item'] as $itemField): ?>
 			<tr>
 				<td><?php echo $itemField['title']; ?></td>
-				<td><?php echo $itemField['description']; ?></td>
-				<td><?php echo $itemField['pubDate']; ?></td>
+				<td><?php echo strip_tags($itemField['description']); ?></td>
+				<td><?php echo date('Y-m-d H:i:s', strtotime($itemField['pubDate'])); ?></td>
+				<td><?php $this->RssStalker->findImages($itemField); ?></td>
 				<td>
 					<?php $itemLink = is_array($itemField['link']) ? $itemField['link']['@'] : $itemField['link']; ?>
 					<?php echo $this->Html->link(__('View source'), $itemLink, array('target' => '_blank', 'class' => 'btn btn-small')); ?>
-					<?php //echo $this->Form->postLink(__('Import'), array('controller' => 'articles', 'action' => 'add', 'title' => $itemField['title'],  'link' => $itemLink, 'description' => $itemField['description'], 'pubDate' => $itemField['pubDate'], 'category_id' => $category['Category']['id']), array('class' => 'btn btn-small')); ?>
-					
 					<?php echo $this->Form->create('Article', array('id' => 'importArticle', 'type' => 'post', 'url' => array('controller' => 'articles', 'action' => 'add')));
 					echo $this->Form->hidden('Article.title', array('default' => $itemField['title']));
 					echo $this->Form->hidden('Article.link', array('default' => $itemLink));
-					echo $this->Form->hidden('Article.description', array('default' => $itemField['description']));
-					echo $this->Form->hidden('Article.pubDate', array('default' => $itemField['pubDate']));
+					echo $this->Form->hidden('Article.description', array('default' => strip_tags($itemField['description'])));
+					echo $this->Form->hidden('Article.pubDate', array('default' => date('Y-m-d H:i:s', strtotime($itemField['pubDate']))));
 					echo $this->Form->hidden('Article.category_id', array('default' => $category['Category']['id']));
 					echo $this->Form->hidden('Article.confirm', array('default' => 'toConfirm'));
 
@@ -81,21 +81,23 @@
 			</tr>
 		<?php endforeach; ?>
 		</table>
-		
+	
+
 		<h4>Feed parsed data</h4>
 		<dl>
-		<?php foreach($feedData['rss']['channel'] as $feedFieldName => $feedFieldVal) : ?>
-			<?php if(!is_array($feedFieldVal) && $feedFieldName!='item') : ?>
-			<dt><?php echo __($feedFieldName); ?></dt>
+		<?php //foreach($feedData['rss']['channel'] as $feedFieldName => $feedFieldVal) : ?>
+			<?php //if(!is_array($feedFieldVal) && $feedFieldName!='item') : ?>
+			<dt><?php //echo __($feedFieldName); ?></dt>
 			<dd>
-				<?php echo h($feedFieldVal); ?>
+				<?php //echo h($feedFieldVal); ?>
 				&nbsp;
 			</dd>
-			<?php endif; ?>
-		<?php endforeach; ?>
+			<?php //endif; ?>
+		<?php //endforeach; ?>
 		</dl>
 		
-		<!--<pre><?php print_r($feedData); ?></pre>-->
+		<pre><?php print_r($feedData); ?></pre>
+
 		
 	</div>
 

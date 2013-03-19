@@ -6,6 +6,7 @@
 			<th><?php echo $this->Paginator->sort('link'); ?></th>
 			<th><?php echo $this->Paginator->sort('description'); ?></th>
 			<th><?php echo $this->Paginator->sort('pubDate'); ?></th>
+			<th><?php echo $this->Paginator->sort('image'); ?></th>
 			<th><?php echo $this->Paginator->sort('category_id'); ?></th>
 			<th><?php echo $this->Paginator->sort('love_count'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
@@ -16,6 +17,7 @@
 		<td><?php echo $this->Html->link(__('View source'), $article['Article']['link'], array('target' => '_blank', 'class' => 'btn btn-small')); ?></td>
 		<td><?php echo h($article['Article']['description']); ?>&nbsp;</td>
 		<td><?php echo h($article['Article']['pubDate']); ?>&nbsp;</td>
+		<td><?php echo $article['Article']['image'] ? '<img src="'.$article['Article']['image'].'"/>' : '&nbsp;'; ?></td>
 		<td>
 			<?php echo $this->Html->link($article['Category']['name'], array('controller' => 'categories', 'action' => 'view', $article['Category']['id'])); ?>
 		</td>

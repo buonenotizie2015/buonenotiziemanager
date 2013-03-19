@@ -4,6 +4,7 @@ App::uses('AppController', 'Controller');
 class CategoriesController extends AppController {
 	
 	public $displayField = 'name';
+	public $helper = array('RssStalker');
 	
 	public function beforeFilter() {
 		parent::beforeFilter();

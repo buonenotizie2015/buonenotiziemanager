@@ -13,7 +13,7 @@
 	<?php foreach ($articles as $article): ?>
 	<tr>
 		<td><?php echo h($article['Article']['title']); ?>&nbsp;</td>
-		<td><?php echo h($article['Article']['link']); ?>&nbsp;</td>
+		<td><?php echo $this->Html->link(__('View source'), $article['Article']['link'], array('target' => '_blank', 'class' => 'btn btn-small')); ?></td>
 		<td><?php echo h($article['Article']['description']); ?>&nbsp;</td>
 		<td><?php echo h($article['Article']['pubDate']); ?>&nbsp;</td>
 		<td>

@@ -14,10 +14,11 @@ class RssStalkerHelper extends AppHelper {
 			}
 			else{
 				if(in_array(substr(strrchr($value,'.'),1), $allowedExt)){
-					echo '<img width="100" src="'.$value.'"/>';
+					$this->imagelink = $value;
 				}
 			}
 		}
+		return $this->imagelink;
     }
 }
 

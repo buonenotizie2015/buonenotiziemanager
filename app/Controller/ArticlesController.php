@@ -8,11 +8,13 @@ class ArticlesController extends AppController {
 	}
 
 	public function isAuthorized($user) {
-		$articleCategoryId = $this->request->data['Article']['category_id'];
-		if (isset($user['role']) && $user['role'] === 'admin')
-			return true;
-		elseif ($this->Article->Category->isOwnedBy($articleCategoryId, $this->Session->read('Auth.User.id')))
-			return true;
+		if (in_array($this->action, array('add', 'edit', 'delete'))) {
+			$articleCategoryId = $this->request->data['Article']['category_id'];
+			if (isset($user['role']) && $user['role'] === 'admin')
+				return true;
+			elseif ($this->Article->Category->isOwnedBy($articleCategoryId, $this->Session->read('Auth.User.id')))
+				return true;
+		}
 
 		return parent::isAuthorized($user);
 	}

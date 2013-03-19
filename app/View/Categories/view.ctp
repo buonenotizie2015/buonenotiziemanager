@@ -63,7 +63,7 @@
 				<td><?php echo $itemField['title']; ?></td>
 				<td><?php echo strip_tags($itemField['description']); ?></td>
 				<td><?php echo date('Y-m-d H:i:s', strtotime($itemField['pubDate'])); ?></td>
-				<td><?php $this->RssStalker->findImages($itemField); ?></td>
+				<td><?php $imageURL = $this->RssStalker->findImages($itemField); echo '<img width="100" src="'.$imageURL.'"/>'; ?></td>
 				<td>
 					<?php $itemLink = is_array($itemField['link']) ? $itemField['link']['@'] : $itemField['link']; ?>
 					<?php echo $this->Html->link(__('View source'), $itemLink, array('target' => '_blank', 'class' => 'btn btn-small')); ?>
@@ -72,6 +72,7 @@
 					echo $this->Form->hidden('Article.link', array('default' => $itemLink));
 					echo $this->Form->hidden('Article.description', array('default' => strip_tags($itemField['description'])));
 					echo $this->Form->hidden('Article.pubDate', array('default' => date('Y-m-d H:i:s', strtotime($itemField['pubDate']))));
+					echo $this->Form->hidden('Article.image', array('default' => $imageURL));
 					echo $this->Form->hidden('Article.category_id', array('default' => $category['Category']['id']));
 					echo $this->Form->hidden('Article.confirm', array('default' => 'toConfirm'));
 
@@ -82,7 +83,7 @@
 		<?php endforeach; ?>
 		</table>
 	
-
+<!--
 		<h4>Feed parsed data</h4>
 		<dl>
 		<?php //foreach($feedData['rss']['channel'] as $feedFieldName => $feedFieldVal) : ?>
@@ -96,8 +97,8 @@
 		<?php //endforeach; ?>
 		</dl>
 		
-		<pre><?php print_r($feedData); ?></pre>
-
+		<pre><?php //print_r($feedData); ?></pre>
+-->
 		
 	</div>
 

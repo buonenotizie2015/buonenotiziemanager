@@ -70,7 +70,7 @@
 					<?php echo $this->Form->create('Article', array('id' => 'importArticle', 'type' => 'post', 'url' => array('controller' => 'articles', 'action' => 'add')));
 					echo $this->Form->hidden('Article.title', array('default' => $itemField['title']));
 					echo $this->Form->hidden('Article.link', array('default' => $itemLink));
-					echo $this->Form->hidden('Article.description', array('default' => html_entity_decode(strip_tags($itemField['description']), ENT_QUOTES, 'UTF-8')));
+					echo $this->Form->hidden('Article.description', array('default' => html_entity_decode(strip_tags($itemField['description']), ENT_QUOTES, '')));
 					echo $this->Form->hidden('Article.pubDate', array('default' => date('Y-m-d H:i:s', strtotime($itemField['pubDate']))));
 					echo $this->Form->hidden('Article.image', array('default' => $imageURL));
 					echo $this->Form->hidden('Article.category_id', array('default' => $category['Category']['id']));

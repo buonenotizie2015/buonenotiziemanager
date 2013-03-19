@@ -63,14 +63,14 @@
 				<td><?php echo $itemField['title']; ?></td>
 				<td><?php echo html_entity_decode(strip_tags($itemField['description']), ENT_QUOTES, 'UTF-8'); ?></td>
 				<td><?php echo date('Y-m-d H:i:s', strtotime($itemField['pubDate'])); ?></td>
-				<td><?php $imageURL = $this->RssStalker->findImages($itemField); echo '<img width="100" src="'.$imageURL.'"/>'; ?></td>
+				<td><?php $imageURL = $this->RssStalker->findImages($itemField, null); echo '<img width="100" src="'.$imageURL.'"/>'; ?></td>
 				<td>
 					<?php $itemLink = is_array($itemField['link']) ? $itemField['link']['@'] : $itemField['link']; ?>
 					<?php echo $this->Html->link(__('View source'), $itemLink, array('target' => '_blank', 'class' => 'btn btn-small')); ?>
 					<?php echo $this->Form->create('Article', array('id' => 'importArticle', 'type' => 'post', 'url' => array('controller' => 'articles', 'action' => 'add')));
 					echo $this->Form->hidden('Article.title', array('default' => $itemField['title']));
 					echo $this->Form->hidden('Article.link', array('default' => $itemLink));
-					echo $this->Form->hidden('Article.description', array('default' => html_entity_decode(strip_tags($itemField['description']), ENT_QUOTES, 'UTF-8'))));
+					echo $this->Form->hidden('Article.description', array('default' => html_entity_decode(strip_tags($itemField['description']), ENT_QUOTES, 'UTF-8')));
 					echo $this->Form->hidden('Article.pubDate', array('default' => date('Y-m-d H:i:s', strtotime($itemField['pubDate']))));
 					echo $this->Form->hidden('Article.image', array('default' => $imageURL));
 					echo $this->Form->hidden('Article.category_id', array('default' => $category['Category']['id']));

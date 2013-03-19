@@ -61,7 +61,7 @@
 			foreach ($feedData['rss']['channel']['item'] as $itemField): ?>
 			<tr>
 				<td><?php echo $itemField['title']; ?></td>
-				<td><?php echo html_entity_decode(strip_tags($itemField['description']), ENT_QUOTES, 'UTF-8'); ?></td>
+				<td><?php echo html_entity_decode(strip_tags($itemField['description']), ENT_QUOTES, ''); ?></td>
 				<td><?php echo date('Y-m-d H:i:s', strtotime($itemField['pubDate'])); ?></td>
 				<td><?php $imageURL = $this->RssStalker->findImages($itemField, null); echo '<img width="100" src="'.$imageURL.'"/>'; ?></td>
 				<td>

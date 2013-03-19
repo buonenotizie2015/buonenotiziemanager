@@ -48,7 +48,8 @@ class Love extends AppModel {
 			'foreignKey' => 'article_id',
 			'conditions' => '',
 			'fields' => '',
-			'order' => ''
+			'order' => '',
+			'counterCache' => true
 		)
 	);
 }

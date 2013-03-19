@@ -47,7 +47,7 @@ class AppController extends Controller {
 	);
 	
 	public function beforeFilter() {
-		$this->Auth->allow('login', 'view', 'getCategories');
+		$this->Auth->allow('login', 'view', 'getCategories', 'topArticles');
 			
 		if($this->Auth->user()){
 			if (isset($user['role']) && $user['role'] === 'admin')

@@ -92,9 +92,6 @@ class Article extends AppModel {
 			'order' => '',
 			'limit' => '',
 			'offset' => '',
-			'exclusive' => '',
-			'finderQuery' => '',
-			'counterQuery' => ''
 		)
 	);
 	

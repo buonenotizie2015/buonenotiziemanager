@@ -47,6 +47,16 @@ class ArticlesController extends AppController {
 		$this->Article->recursive = 0;
 		$this->set('articles', $this->paginate());
 	}
+	
+	public function topArticles(){
+		$this->header('Content-type: application/javascript');
+		$this->layout = 'ajax';
+		$articles = $this->Article->find('all', array(
+			'limit' => 10,
+			'order' => array('Article.love_count' => 'desc')
+			));
+		$this->set('articles', $articles);
+	}
 
 	public function view($id = null) {
 		if (!$this->Article->exists($id)) {

@@ -1000,3 +1000,124 @@ Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
 Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
 [main] - APP/webroot/index.php, line 97
 
+2013-03-16 08:50:24 Notice: Notice (8): Undefined variable: categories in [/Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/View/Articles/top_articles.ctp, line 4]
+Trace:
+include - APP/View/Articles/top_articles.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 947
+View::_render() - CORE/Cake/View/View.php, line 909
+View::render() - CORE/Cake/View/View.php, line 470
+Controller::render() - CORE/Cake/Controller/Controller.php, line 947
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 97
+
+2013-03-16 08:50:49 Notice: Notice (8): Undefined variable: categories in [/Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/View/Articles/top_articles.ctp, line 4]
+Trace:
+include - APP/View/Articles/top_articles.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 947
+View::_render() - CORE/Cake/View/View.php, line 909
+View::render() - CORE/Cake/View/View.php, line 470
+Controller::render() - CORE/Cake/Controller/Controller.php, line 947
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 97
+
+2013-03-16 08:50:50 Notice: Notice (8): Undefined variable: categories in [/Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/View/Articles/top_articles.ctp, line 4]
+Trace:
+include - APP/View/Articles/top_articles.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 947
+View::_render() - CORE/Cake/View/View.php, line 909
+View::render() - CORE/Cake/View/View.php, line 470
+Controller::render() - CORE/Cake/Controller/Controller.php, line 947
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 97
+
+2013-03-16 08:51:11 Notice: Notice (8): Undefined variable: categories in [/Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/View/Articles/top_articles.ctp, line 4]
+Trace:
+include - APP/View/Articles/top_articles.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 947
+View::_render() - CORE/Cake/View/View.php, line 909
+View::render() - CORE/Cake/View/View.php, line 470
+Controller::render() - CORE/Cake/Controller/Controller.php, line 947
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 97
+
+2013-03-16 08:51:41 Notice: Notice (8): Undefined variable: categories in [/Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/View/Articles/top_articles.ctp, line 4]
+Trace:
+include - APP/View/Articles/top_articles.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 947
+View::_render() - CORE/Cake/View/View.php, line 909
+View::render() - CORE/Cake/View/View.php, line 470
+Controller::render() - CORE/Cake/Controller/Controller.php, line 947
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 97
+
+2013-03-16 08:51:42 Notice: Notice (8): Undefined variable: categories in [/Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/View/Articles/top_articles.ctp, line 4]
+Trace:
+include - APP/View/Articles/top_articles.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 947
+View::_render() - CORE/Cake/View/View.php, line 909
+View::render() - CORE/Cake/View/View.php, line 470
+Controller::render() - CORE/Cake/Controller/Controller.php, line 947
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 97
+
+2013-03-16 22:46:17 Notice: Notice (8): Undefined index: callback in [/Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/View/Articles/top_articles.ctp, line 3]
+Trace:
+include - APP/View/Articles/top_articles.ctp, line 3
+View::_evaluate() - CORE/Cake/View/View.php, line 947
+View::_render() - CORE/Cake/View/View.php, line 909
+View::render() - CORE/Cake/View/View.php, line 470
+Controller::render() - CORE/Cake/Controller/Controller.php, line 947
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 97
+
+2013-03-16 22:46:17 Notice: Notice (8): Undefined variable: categories in [/Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/View/Articles/top_articles.ctp, line 3]
+Trace:
+include - APP/View/Articles/top_articles.ctp, line 3
+View::_evaluate() - CORE/Cake/View/View.php, line 947
+View::_render() - CORE/Cake/View/View.php, line 909
+View::render() - CORE/Cake/View/View.php, line 470
+Controller::render() - CORE/Cake/Controller/Controller.php, line 947
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 97
+
+2013-03-16 22:46:23 Notice: Notice (8): Undefined index: callback in [/Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/View/Articles/top_articles.ctp, line 3]
+Trace:
+include - APP/View/Articles/top_articles.ctp, line 3
+View::_evaluate() - CORE/Cake/View/View.php, line 947
+View::_render() - CORE/Cake/View/View.php, line 909
+View::render() - CORE/Cake/View/View.php, line 470
+Controller::render() - CORE/Cake/Controller/Controller.php, line 947
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 97
+
+2013-03-18 15:48:22 Notice: Notice (8): Undefined variable: articles in [/Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/View/Articles/top_articles.ctp, line 4]
+Trace:
+include - APP/View/Articles/top_articles.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 947
+View::_render() - CORE/Cake/View/View.php, line 909
+View::render() - CORE/Cake/View/View.php, line 470
+Controller::render() - CORE/Cake/Controller/Controller.php, line 947
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 97
+
+2013-03-18 15:48:49 Notice: Notice (8): Undefined variable: articles in [/Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/View/Articles/top_articles.ctp, line 4]
+Trace:
+include - APP/View/Articles/top_articles.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 947
+View::_render() - CORE/Cake/View/View.php, line 909
+View::render() - CORE/Cake/View/View.php, line 470
+Controller::render() - CORE/Cake/Controller/Controller.php, line 947
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 97
+

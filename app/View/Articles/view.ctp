@@ -9,6 +9,8 @@
 		<dd><?php echo h($article['Article']['pubDate']); ?>&nbsp;</dd>
 		<dt><?php echo __('Category'); ?></dt>
 		<dd><?php echo $this->Html->link($article['Category']['name'], array('controller' => 'categories', 'action' => 'view', $article['Category']['id'])); ?>&nbsp;</dd>
+		<dt><?php echo __('Love Count'); ?></dt>
+		<dd><?php echo h($article['Article']['love_count']); ?>&nbsp;</dd>
 	</dl>
 </div>
 <div class="actions">

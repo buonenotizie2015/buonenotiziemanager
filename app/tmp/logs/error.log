@@ -8243,3 +8243,91 @@ Stack Trace:
 #1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest), Object(CakeResponse))
 #2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2013-03-19 10:57:16 Error: [MissingActionException] Action ArticlesController::\"http:\() could not be found.
+Exception Attributes: array (
+  'controller' => 'ArticlesController',
+  'action' => '\\"http:\\',
+)
+Request URL: /buonenotizie.it/feedmanager_app_bn/articles/%5C%22http:%5C/%5C/www.repubblica.it%5C/images%5C/2013%5C/02%5C/24%5C/145507928-fb35615a-1327-4de6-9a20-cd2925f1fb2e.jpg%5C%22
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-03-19 10:57:16 Error: [MissingActionException] Action ArticlesController::\"http:\() could not be found.
+Exception Attributes: array (
+  'controller' => 'ArticlesController',
+  'action' => '\\"http:\\',
+)
+Request URL: /buonenotizie.it/feedmanager_app_bn/articles/%5C%22http:%5C/%5C/www.repubblica.it%5C/images%5C/2013%5C/03%5C/02%5C/024744740-174bc41b-7111-4b04-b0bb-a501e54b9402.jpg%5C%22
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-03-19 10:57:17 Error: [MissingActionException] Action ArticlesController::\"http:\() could not be found.
+Exception Attributes: array (
+  'controller' => 'ArticlesController',
+  'action' => '\\"http:\\',
+)
+Request URL: /buonenotizie.it/feedmanager_app_bn/articles/%5C%22http:%5C/%5C/www.repubblica.it%5C/images%5C/2013%5C/02%5C/26%5C/153912663-d00806b5-0985-4658-9a23-1f2f404b6241.jpg%5C%22
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-03-19 10:57:17 Error: [MissingActionException] Action ArticlesController::\"http:\() could not be found.
+Exception Attributes: array (
+  'controller' => 'ArticlesController',
+  'action' => '\\"http:\\',
+)
+Request URL: /buonenotizie.it/feedmanager_app_bn/articles/%5C%22http:%5C/%5C/www.repubblica.it%5C/images%5C/2013%5C/02%5C/20%5C/030944236-869dded2-d488-4dd8-bd1f-d73b12c8263c.jpg%5C%22
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-03-19 10:59:47 Error: [MissingActionException] Action ArticlesController::\"http:\() could not be found.
+Exception Attributes: array (
+  'controller' => 'ArticlesController',
+  'action' => '\\"http:\\',
+)
+Request URL: /buonenotizie.it/feedmanager_app_bn/articles/%5C%22http:%5C/%5C/www.repubblica.it%5C/images%5C/2013%5C/02%5C/24%5C/145507928-fb35615a-1327-4de6-9a20-cd2925f1fb2e.jpg%5C%22
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-03-19 10:59:47 Error: [MissingActionException] Action ArticlesController::\"http:\() could not be found.
+Exception Attributes: array (
+  'controller' => 'ArticlesController',
+  'action' => '\\"http:\\',
+)
+Request URL: /buonenotizie.it/feedmanager_app_bn/articles/%5C%22http:%5C/%5C/www.repubblica.it%5C/images%5C/2013%5C/02%5C/26%5C/153912663-d00806b5-0985-4658-9a23-1f2f404b6241.jpg%5C%22
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-03-19 10:59:47 Error: [MissingActionException] Action ArticlesController::\"http:\() could not be found.
+Exception Attributes: array (
+  'controller' => 'ArticlesController',
+  'action' => '\\"http:\\',
+)
+Request URL: /buonenotizie.it/feedmanager_app_bn/articles/%5C%22http:%5C/%5C/www.repubblica.it%5C/images%5C/2013%5C/03%5C/02%5C/024744740-174bc41b-7111-4b04-b0bb-a501e54b9402.jpg%5C%22
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-03-19 10:59:47 Error: [MissingActionException] Action ArticlesController::\"http:\() could not be found.
+Exception Attributes: array (
+  'controller' => 'ArticlesController',
+  'action' => '\\"http:\\',
+)
+Request URL: /buonenotizie.it/feedmanager_app_bn/articles/%5C%22http:%5C/%5C/www.repubblica.it%5C/images%5C/2013%5C/02%5C/20%5C/030944236-869dded2-d488-4dd8-bd1f-d73b12c8263c.jpg%5C%22
+Stack Trace:
+#0 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/Ipalo/Sites/buonenotizie.it/feedmanager_app_bn/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

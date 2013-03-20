@@ -53,9 +53,25 @@ class ArticlesController extends AppController {
 	public function topArticles(){
 		$this->header('Content-type: application/javascript');
 		$this->layout = 'ajax';
+		$this->Article->unbindModel(array('belongsTo' => array('Category')));
 		$articles = $this->Article->find('all', array(
 			'limit' => 10,
-			'order' => array('Article.love_count' => 'desc')
+			'order' => array('Article.love_count' => 'desc'),
+			'joins' => array(
+				array(
+					'table' => 'Categories',
+					'alias' => 'Category',
+					'type' => 'left',
+					'conditions' => array('Category.id = Article.category_id' ),
+				),
+				array(
+					'table' => 'Categories',
+					'alias' => 'ParentCategory',
+					'type' => 'left',
+					'conditions' => array('ParentCategory.id = Category.parent_id' ),
+				)
+			),
+			'fields' => array('Article.*', 'Category.*', 'ParentCategory.name')
 			));
 		$this->set('articles', $articles);
 	}

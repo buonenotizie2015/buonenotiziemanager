@@ -34,9 +34,8 @@ class LovesController extends AppController {
 					echo "ok";
 				} else {
 					$this->render(false);
-					echo $this->request->data['BNsecretkey'];
-					echo " error ";
-					print_r($this->request->data);
+					echo "bnsk: ".$this->request->data['BNsecretkey'];
+					echo "error";
 				}
 			}
 			elseif($this->Session->check('Auth.User')){

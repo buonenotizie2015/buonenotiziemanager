@@ -35,6 +35,7 @@ class LovesController extends AppController {
 				} else {
 					$this->render(false);
 					echo "error";
+					print_r($this->request->data);
 				}
 			}
 			elseif($this->Session->check('Auth.User')){

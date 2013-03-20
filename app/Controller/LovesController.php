@@ -34,7 +34,6 @@ class LovesController extends AppController {
 					echo "ok";
 				} else {
 					$this->render(false);
-					echo "bnsk: ".$this->request->data['BNsecretkey'];
 					echo "error";
 				}
 			}

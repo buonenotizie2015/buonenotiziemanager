@@ -45,9 +45,9 @@ class Article extends AppModel {
 		),
 		'pubDate' => array(
 			'notempty' => array(
-				'rule' => array('notempty'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
+				'rule' => array('datetime', 'ymd'),
+				'message' => 'Insert a valid date and time (yyyy-mm-dd hh:mm:ss)',
+				'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations

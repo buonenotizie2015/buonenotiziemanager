@@ -26,7 +26,7 @@ class LovesController extends AppController {
 	}
 
 	public function add() {
-		if ($this->request->is('get')) {
+		if ($this->request->is('post')) {
 			if($this->request->is('ajax')){
 				$this->render(false);
 				print_r($this->request->data);
@@ -37,9 +37,7 @@ class LovesController extends AppController {
 					echo "error";
 				}
 			}
-		}
-		if ($this->request->is('post')) {
-			if($this->Session->check('Auth.User')){
+			elseif($this->Session->check('Auth.User')){
 				$this->Love->create();
 				if ($this->Love->save($this->request->data)) {
 					$this->Session->setFlash(__('The love has been saved'));

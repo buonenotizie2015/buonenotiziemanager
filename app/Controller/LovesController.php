@@ -28,13 +28,12 @@ class LovesController extends AppController {
 	public function add() {
 		if ($this->request->is('post')) {
 			if($this->request->is('ajax')){
+				$this->render(false);
 				print_r($this->request->data);
 				$this->Love->create();
 				if ($this->request->data['BNsecretkey']=='buone2013'&&$this->Love->save($this->request->data)) {
-					$this->render(false);
 					echo "ok";
 				} else {
-					$this->render(false);
 					echo "error";
 				}
 			}

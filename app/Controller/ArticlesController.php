@@ -56,7 +56,7 @@ class ArticlesController extends AppController {
 		$this->Article->unbindModel(array('belongsTo' => array('Category')));
 		$articles = $this->Article->find('all', array(
 			'limit' => 10,
-			'order' => array('Article.love_count' => 'desc'),
+			'order' => array('Article.love_count' => 'desc', 'Article.pudBate' => 'desc'),
 			'joins' => array(
 				array(
 					'table' => 'Categories',

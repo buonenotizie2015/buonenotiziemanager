@@ -25,7 +25,7 @@ class Category extends AppModel {
 		'ChildCategory' => array(
 			'className' => 'Category',
 			'foreignKey' => 'parent_id',
-			'dependent' => false,
+			'dependent' => true,
 			'conditions' => '',
 			'fields' => '',
 			'order' => '',
@@ -38,7 +38,7 @@ class Category extends AppModel {
 		'Article' => array(
 			'className' => 'Article',
 			'foreignKey' => 'category_id',
-			'dependent' => false,
+			'dependent' => true,
 			'conditions' => '',
 			'fields' => '',
 			'order' => '',

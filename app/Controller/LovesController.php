@@ -28,6 +28,7 @@ class LovesController extends AppController {
 	public function add() {
 		if ($this->request->is('post')) {
 			if($this->request->is('ajax')){
+				print_r($this->request->data);
 				$this->Love->create();
 				if ($this->request->data['BNsecretkey']=='buone2013'&&$this->Love->save($this->request->data)) {
 					$this->render(false);
@@ -35,7 +36,6 @@ class LovesController extends AppController {
 				} else {
 					$this->render(false);
 					echo "error";
-					print_r($this->request->data);
 				}
 			}
 			elseif($this->Session->check('Auth.User')){

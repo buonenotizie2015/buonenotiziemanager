@@ -55,7 +55,7 @@ class ArticlesController extends AppController {
 		$this->layout = 'ajax';
 		$this->Article->unbindModel(array('belongsTo' => array('Category')));
 		$articles = $this->Article->find('all', array(
-			'limit' => 10,
+			'limit' => 25,
 			'order' => array('Article.love_count' => 'desc', 'Article.pubDate' => 'desc'),
 			'joins' => array(
 				array(

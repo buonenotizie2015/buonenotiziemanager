@@ -85,7 +85,7 @@ class ArticlesController extends AppController {
 	}
 
 	public function add() {
-		if($this->request->data['Article']['confirm']){
+		if(isset($this->request->data['Article']['confirm'])){
 			$this->Session->setFlash(__('Check article datas and submit the form.'));
 		}
 		else{

@@ -29,7 +29,6 @@ class LovesController extends AppController {
 		if ($this->request->is('post')) {
 			if($this->request->is('ajax')){
 				$this->render(false);
-				print_r($this->request->data);
 				$this->Love->create();
 				if ($this->request->data['BNsecretkey']=='buone2013'&&$this->Love->save($this->request->data)) {
 					echo "ok";

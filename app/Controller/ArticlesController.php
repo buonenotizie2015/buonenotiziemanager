@@ -69,10 +69,8 @@ class ArticlesController extends AppController {
 			if(gettype($this->request->data['main_category'])=='array')
 				$conditions = array("Category.parent_id" => $this->request->data['main_category']);
 			elseif(gettype($this->request->data['main_category'])=='string')
-				$conditions = explode(',',$this->request->data['main_category']);
+				$conditions = array("Category.parent_id" => explode(',',$this->request->data['main_category']));
 		}
-		
-		$this->log($conditions);
 		
 		$this->Article->unbindModel(array('belongsTo' => array('Category')));
 		

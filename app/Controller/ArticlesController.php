@@ -72,6 +72,7 @@ class ArticlesController extends AppController {
 				$conditions = array("Category.parent_id" => explode(',',$this->request->data['main_category']));
 		}
 		
+		$this->log($this->request->data['main_category']);
 		$this->log($conditions);
 		
 		$this->Article->unbindModel(array('belongsTo' => array('Category')));

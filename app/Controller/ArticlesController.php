@@ -45,7 +45,11 @@ class ArticlesController extends AppController {
 			)
 		);
 		*/
-		
+		public $paginate = array(
+			'order' => array(
+				'Article.pubDate' => 'desc'
+			)
+		);
 		$this->Article->recursive = 0;
 		$this->set('articles', $this->paginate());
 	}

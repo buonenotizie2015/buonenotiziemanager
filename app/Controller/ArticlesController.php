@@ -58,7 +58,7 @@ class ArticlesController extends AppController {
 		$this->header('Content-type: application/javascript');
 		$this->layout = 'ajax';
 		
-		$artperpage = 5;
+		$artperpage = 10;
 		if(isset($this->request->data['page'])){
 			$reqPage = $this->request->data['page'];
 			$fromArt = $reqPage*$artperpage;
@@ -71,6 +71,8 @@ class ArticlesController extends AppController {
 			elseif(gettype($this->request->data['main_category'])=='string')
 				$conditions = explode(',',$this->request->data['main_category']);
 		}
+		
+		$this->log($conditions);
 		
 		$this->Article->unbindModel(array('belongsTo' => array('Category')));
 		

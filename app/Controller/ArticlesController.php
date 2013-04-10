@@ -45,7 +45,7 @@ class ArticlesController extends AppController {
 			)
 		);
 		*/
-		public $paginate = array(
+		$this->paginate = array(
 			'order' => array(
 				'Article.pubDate' => 'desc'
 			)

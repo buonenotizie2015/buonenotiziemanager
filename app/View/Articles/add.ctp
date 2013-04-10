@@ -11,7 +11,7 @@
 		echo $this->Form->input('category_id', array());
 	?>
 	</fieldset>
-<?php echo $this->Form->end(__('Submit')); ?>
+<?php echo $this->Form->end(array('label' => __('Submit'), 'autofocus'=>'autofocus')); ?>
 </div>
 <div class="actions">
 	<h3><?php echo __('Actions'); ?></h3>

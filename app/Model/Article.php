@@ -65,13 +65,8 @@ class Article extends AppModel {
 		),
 	);
 
-	//The Associations below have been created with all possible keys, those that are not needed can be removed
+	public $order = "Article.pubDate ASC";
 
-/**
- * belongsTo associations
- *
- * @var array
- */
 	public $belongsTo = array(
 		'Category' => array(
 			'className' => 'Category',

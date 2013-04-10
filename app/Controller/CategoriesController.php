@@ -69,11 +69,12 @@ class CategoriesController extends AppController {
 				))
 			)
 		);*/
+		
 		$articles = $this->Category->Article->find('all',
 			array(
-				'limit' => 50,
+				'limit' => 20,
 				'conditions' => array('Article.category_id =' => $category['Category']['id']),
-				'order' => array('Article.pubDate ASC'),
+				'order' => array('Article.pubDate DESC'),
 				'joins' => array(
 					array(
 						'table' => 'Categories',

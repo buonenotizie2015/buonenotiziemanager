@@ -50,6 +50,49 @@ class ArticlesController extends AppController {
 		$this->set('articles', $this->paginate());
 	}
 	
+	public function getArticles(){
+		$this->header('Content-type: application/javascript');
+		$this->layout = 'ajax';
+		
+		$artperpage = 5;
+		if(isset($this->request->data['page'])){
+			$reqPage = $this->request->data['page'];
+			$fromArt = $reqPage*$artperpage;
+		}
+		
+		$conditions = array();
+		if(isset($this->request->data['main_category'])){
+			if(gettype($this->request->data['main_category'])=='array')
+				$conditions = array("Category.parent_id" => $this->request->data['main_category']);
+			elseif(gettype($this->request->data['main_category'])=='string')
+				$conditions = explode(',',$this->request->data['main_category']);
+		}
+		
+		$this->Article->unbindModel(array('belongsTo' => array('Category')));
+		
+		$articles = $this->Article->find('all', array(
+			'conditions' => $conditions,
+			'limit' => isset($reqPage) ? $fromArt.','.$artperpage : 50,
+			'order' => array('Article.pubDate' => 'desc'),
+			'joins' => array(
+				array(
+					'table' => 'Categories',
+					'alias' => 'Category',
+					'type' => 'left',
+					'conditions' => array('Category.id = Article.category_id' ),
+				),
+				array(
+					'table' => 'Categories',
+					'alias' => 'ParentCategory',
+					'type' => 'left',
+					'conditions' => array('ParentCategory.id = Category.parent_id' ),
+				)
+			),
+			'fields' => array('Article.*', 'Category.*', 'ParentCategory.name')
+			));
+		$this->set(compact('articles', 'reqPage', 'fromArt', 'conditions'));
+	}
+	
 	public function topArticles(){
 		$this->header('Content-type: application/javascript');
 		$this->layout = 'ajax';
@@ -93,7 +136,8 @@ class ArticlesController extends AppController {
 				$this->Article->create();
 				if ($this->Article->save($this->request->data)) {
 					$this->Session->setFlash(__('The article has been saved'));
-					$this->redirect(array('action' => 'view', $this->Article->id));
+					$lastSaved = $this->Article->findById($this->Article->id);
+					$this->redirect(array('controller' => 'categories', 'action' => 'view', $lastSaved['Article']['category_id']));
 				} else {
 					$this->Session->setFlash(__('The article could not be saved. Please, try again.'));
 				}

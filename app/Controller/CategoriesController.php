@@ -4,7 +4,8 @@ App::uses('AppController', 'Controller');
 class CategoriesController extends AppController {
 	
 	public $displayField = 'name';
-	public $helper = array('RssStalker');
+	public $helper = array('RssStalker', 'Js');
+	public $components = array('RequestHandler');
 	
 	public function beforeFilter() {
 		parent::beforeFilter();
@@ -55,25 +56,9 @@ class CategoriesController extends AppController {
 			
 		$this->set('category', $category);
 		
-		//Handling request Rss or Json
-		/*$articles = $this->Category->Article->find('all',
-			array(
-				'limit' => 20,
-				'conditions' => array('Article.category_id =' => $category['Category']['id']),
-				'joins' => array(array('table' => 'categories',
-					'alias' => 'ParentCategory',
-					'type' => 'LEFT',
-					'conditions' => array(
- 						'ParentCategory.id = '.$category['Category']['parent_id'],
-					),
-					'fields' => 'ParentCategory.name'
-				))
-			)
-		);*/
-		
 		$articles = $this->Category->Article->find('all',
 			array(
-				'limit' => 20,
+				'limit' => 0,
 				'conditions' => array('Article.category_id =' => $category['Category']['id']),
 				'order' => array('Article.pubDate DESC'),
 				'joins' => array(
@@ -87,6 +72,7 @@ class CategoriesController extends AppController {
 				'fields' => array('Article.*', 'Category.*', 'ParentCategory.name')
 			)
 		);
+		
 		$this->set(compact('articles'));
 	}
 	
@@ -109,8 +95,8 @@ class CategoriesController extends AppController {
 			$this->Category->validator()->remove('User');
 			//set slug
 			$parentName = $this->Category->findById($this->request->data['Category']['parent_id']);
-			$parentSlug = isset($parentName['Category']) ? $parentName['Category']['name'].'_' : '';
-			$this->request->data['Category']['slug'] = Inflector::slug(strtolower($parentSlug.$this->request->data['Category']['name']));
+			$parentSlug = isset($parentName['Category']) ? $parentName['Category']['name'].'-' : '';
+			$this->request->data['Category']['slug'] = $this->Category->createSlug($parentSlug.$this->request->data['Category']['name']); //Inflector::slug(strtolower($parentSlug.$this->request->data['Category']['name']));
 			if ($this->Category->save($this->request->data)) {
 				$this->Session->setFlash(__('The category has been saved'));
 				$this->redirect(array('action' => 'view', $this->Category->id));
@@ -132,8 +118,8 @@ class CategoriesController extends AppController {
 		if ($this->request->is('post') || $this->request->is('put')) {
 			//set slug
 			$parentName = $this->Category->findById($this->request->data['Category']['parent_id']);
-			$parentName = isset($parentName) ? $parentName['Category']['name'].'_' : '';
-			$this->request->data['Category']['slug'] = Inflector::slug(strtolower($parentName.$this->request->data['Category']['name']));
+			$parentSlug = isset($parentName) ? $parentName['Category']['name'].'-' : '';
+			$this->request->data['Category']['slug'] = $this->Category->createSlug($parentSlug.$this->request->data['Category']['name'], $this->Category->id); //Inflector::slug(strtolower($parentName.$this->request->data['Category']['name']));
 			if ($this->Category->save($this->request->data)) {
 				$this->Session->setFlash(__('The category has been saved'));
 				$this->redirect(array('action' => 'view', $this->Category->id));

@@ -5,6 +5,7 @@
 	<?php
 		echo $this->Form->input('name');
 		echo $this->Form->input('parent_id', array('options' => $parentCategories, 'empty' => '(no parent)', 'default' => 0));
+		echo $this->Form->input('slug');
 		echo $this->Form->input('User', array('label' => 'Users permissions', 'multiple' => 'checkbox', 'options' => $users));
 	?>
 	</fieldset>

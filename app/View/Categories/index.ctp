@@ -9,8 +9,8 @@
 			<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	<?php foreach ($categories as $category): ?>
-	<tr>
-		<td><?php echo $category['ParentCategory']['name'] ? '&rarr; ' : ''; echo h($category['Category']['name']); ?>&nbsp;</td>
+	<tr <?php echo $category['ParentCategory']['name'] ? '' : 'style="background-color:#eee;"' ; ?>>
+		<td><?php echo $category['ParentCategory']['name'] ? '&rarr; '.h($category['Category']['name']) : '<b style="text-transform:uppercase;">'.h($category['Category']['name']).'</b>'; ?>&nbsp;</td>
 		<td><?php echo h($category['Category']['slug']); ?>&nbsp;</td>
 		<td>
 			<?php echo $this->Html->link($category['ParentCategory']['name'], array('controller' => 'categories', 'action' => 'view', $category['ParentCategory']['id'])); ?>

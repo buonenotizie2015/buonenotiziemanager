@@ -73,7 +73,7 @@ class FeedsController extends AppController {
 			throw new NotFoundException(__('Invalid feed'));
 		}
 		$this->request->onlyAllow('post', 'delete');
-		if ($this->Feed->delete($cascade = true)) { //OCCHIO CHE C'E' IL CASCADE per la cancellazione
+		if ($this->Feed->delete()) {
 			$this->Session->setFlash(__('Feed deleted'));
 			$this->redirect(array('action' => 'index'));
 		}

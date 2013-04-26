@@ -89,26 +89,40 @@ class CategoriesController extends AppController {
 	}
 
 	public function add() {
+		$parentCategories = $this->Category->ParentCategory->find('list', array('conditions' => array('ParentCategory.parent_id' => null)));
+		$users = $this->Category->User->find('list', array('conditions' => array('User.role !=' => 'admin')));
+		$feeds = $this->Category->Feed->find('list');
+		$this->set(compact('parentCategories', 'users', 'feeds'));
+		
 		if ($this->request->is('post')) {
 			$this->Category->create();
 			//set better array data
 			$this->Category->validator()->remove('User');
-			//set slug
+			
 			$parentName = $this->Category->findById($this->request->data['Category']['parent_id']);
-			$parentSlug = isset($parentName['Category']) ? $parentName['Category']['name'].'-' : '';
-			$this->request->data['Category']['slug'] = $this->Category->createSlug($parentSlug.$this->request->data['Category']['name']); //Inflector::slug(strtolower($parentSlug.$this->request->data['Category']['name']));
-			if ($this->Category->save($this->request->data)) {
+			
+			//set slug
+			if(empty($this->request->data['Category']['slug'])){
+				$parentSlug = isset($parentName['Category']) ? $parentName['Category']['name'].'-' : '';
+				$this->request->data['Category']['slug'] = $this->Category->createSlug($parentSlug.$this->request->data['Category']['name']);
+			}
+			
+			//set feed
+			if(!empty($this->request->data['Feed']['url'])){
+				$parentHead = isset($parentName['Category']) ? $parentName['Category']['name'].' ' : '';
+				$this->request->data['Feed']['name'] = $parentHead.$this->request->data['Category']['name'];
+				//$this->request->data['Feed']['category_id'] = $this->request->data['Category']['id'];
+			} else {
+				$this->Category->validator()->remove('Feed');
+			}
+			
+			if ($this->Category->saveAll($this->request->data)) {
 				$this->Session->setFlash(__('The category has been saved'));
 				$this->redirect(array('action' => 'view', $this->Category->id));
 			} else {
 				$this->Session->setFlash(__('The category could not be saved. Please, try again.'));
 			}
 		}
-		
-		$parentCategories = $this->Category->ParentCategory->find('list', array('conditions' => array('ParentCategory.parent_id' => null)));
-		$users = $this->Category->User->find('list', array('conditions' => array('User.role !=' => 'admin')));
-		$feeds = $this->Category->Feed->find('list');
-		$this->set(compact('parentCategories', 'users', 'feeds'));
 	}
 
 	public function edit($id = null) {
@@ -116,11 +130,13 @@ class CategoriesController extends AppController {
 			throw new NotFoundException(__('Invalid category'));
 		}
 		if ($this->request->is('post') || $this->request->is('put')) {
+			
 			//set slug
 			$parentName = $this->Category->findById($this->request->data['Category']['parent_id']);
 			$parentSlug = isset($parentName) ? $parentName['Category']['name'].'-' : '';
-			$this->request->data['Category']['slug'] = $this->Category->createSlug($parentSlug.$this->request->data['Category']['name'], $this->Category->id); //Inflector::slug(strtolower($parentName.$this->request->data['Category']['name']));
-			if ($this->Category->save($this->request->data)) {
+			$this->request->data['Category']['slug'] = $this->Category->createSlug($parentSlug.$this->request->data['Category']['name'], $this->Category->id); 
+			
+			if ($this->Category->saveAll($this->request->data)) {
 				$this->Session->setFlash(__('The category has been saved'));
 				$this->redirect(array('action' => 'view', $this->Category->id));
 			} else {
@@ -130,7 +146,7 @@ class CategoriesController extends AppController {
 			$options = array('conditions' => array('Category.' . $this->Category->primaryKey => $id));
 			$this->request->data = $this->Category->find('first', $options);
 		}
-
+		
 		$parentCategories = $this->Category->ParentCategory->find('list', array('conditions' => array('ParentCategory.parent_id' => null)));
 		$feeds = $this->Category->Feed->find('list');
 		$users = $this->Category->User->find('list', array('conditions' => array('User.role !=' => 'admin')));

@@ -3,10 +3,12 @@
 	<fieldset>
 		<legend><?php echo __('Edit Category'); ?></legend>
 	<?php
-		echo $this->Form->input('id', array('type' => 'hidden'));
-		echo $this->Form->input('name');
-		echo $this->Form->input('parent_id', array('options' => $parentCategories, 'empty' => '(no parent)'));
-		echo $this->Form->input('slug');
+		echo $this->Form->input('Category.id', array('type' => 'hidden'));
+		echo $this->Form->input('Category.name');
+		echo $this->Form->input('Category.parent_id', array('options' => $parentCategories, 'empty' => '(no parent)'));
+		echo $this->Form->input('Category.slug');
+		echo $this->Form->input('Feed.id', array('type' => 'hidden'));
+		echo $this->Form->input('Feed.url', array('label' => 'Feed Url'));
 		if ($this->Session->read('Auth.User.role') === 'admin'){
 			echo $this->Form->input('User', array('multiple' => 'checkbox', 'options' => $users, 'selected' => $selectedUsers));
 		}

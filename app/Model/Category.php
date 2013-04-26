@@ -8,13 +8,21 @@ class Category extends AppModel {
 	public $actsAs = array('Tree');
 
 	public $validate = array(
-		/*'slug' => array(
-			'isUnique' => array(
-				'rule' => 'isUnique',
-				'message' => 'This slug already exists.'
+		'name' => array(
+			'notempty' => array(
+				'rule' => array('notempty'),
+				'required' => false,
+				'message' => 'This field is required'
 			)
 		),
-		*/
+		'slug' => array(
+			'isUnique' => array(
+				'rule' => 'isUnique',
+				'message' => 'This slug already exists',
+				'required' => false,
+				'allowEmpty' => true,
+			)
+		)
 	);
 
 	public $belongsTo = array(

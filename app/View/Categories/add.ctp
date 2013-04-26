@@ -3,10 +3,11 @@
 	<fieldset>
 		<legend><?php echo __('Add Category'); ?></legend>
 	<?php
-		echo $this->Form->input('name');
-		echo $this->Form->input('parent_id', array('options' => $parentCategories, 'empty' => '(no parent)', 'default' => 0));
-		echo $this->Form->input('slug');
-		echo $this->Form->input('User', array('label' => 'Users permissions', 'multiple' => 'checkbox', 'options' => $users));
+		echo $this->Form->input('Category.name');
+		echo $this->Form->input('Category.parent_id', array('options' => $parentCategories, 'empty' => '(no parent)', 'default' => 0));
+		echo $this->Form->input('Category.slug');
+		echo $this->Form->input('Feed.url', array('label' => 'Feed Url'));
+		echo $this->Form->input('Category.User', array('label' => 'Users permissions', 'multiple' => 'checkbox', 'options' => $users));
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>

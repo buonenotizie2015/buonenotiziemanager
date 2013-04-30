@@ -1,0 +1,22 @@
+table.tablesorter thead tr .tablesorter-header {
+	color: #0088CC;
+	cursor:pointer;
+}
+table.tablesorter thead tr .tablesorter-headerAsc .tablesorter-header-inner:after {
+	content: " ⇡";
+}
+table.tablesorter thead tr .tablesorter-headerDesc .tablesorter-header-inner:after {
+	content: " ⇣";
+}
+.articleInserted {
+	background-color:#d6f1dd !important;
+}
+table.tablesorter tr form {
+	margin-bottom:0;
+}
+.tablesorter-scroller-header {
+	width:100% !important;
+}
+.tablesorter-scroller-table {
+	border:1px solid #ccc;
+}

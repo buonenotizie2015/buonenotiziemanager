@@ -23,9 +23,9 @@
 	<div class="navbar navbar-fixed-top navbar-inverse">
 		<div class="navbar-inner">
 			<div class="container-fluid">
-				<?php echo $this->Html->link('BuoneNotizie App Feed Manager', '/', array('class' => 'brand')); ?>
-				<div class="container nav-collapse">
+				<div class="nav-collapse">
 					<ul class="nav">
+						<li><?php echo $this->Html->image('appicon.png', array('class' => 'brand', 'url' => '/')); ?></li>
 						<?php if($this->Session->check('Auth.User')) : ?>
 						<li><?php echo $this->Html->link('Dashboard', '/'); ?></li>
 						<li><?php echo $this->Html->link('Categories', array('controller' => 'categories', 'action' => 'index'));?></li>

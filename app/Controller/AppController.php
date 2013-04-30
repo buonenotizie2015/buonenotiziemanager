@@ -54,7 +54,7 @@ class AppController extends Controller {
 				$this->Auth->allow();
 			else{
 				$this->Auth->deny();
-				$this->Auth->allow('index', 'view', 'display', 'logout');
+				$this->Auth->allow('index', 'view', 'display', 'logout', 'getFeed');
 			}
 		}
 	}

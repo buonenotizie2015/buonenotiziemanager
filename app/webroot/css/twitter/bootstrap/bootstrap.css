@@ -2115,7 +2115,7 @@ table {
 
 .table-hover tbody tr:hover td,
 .table-hover tbody tr:hover th {
-  background-color: #f5f5f5;
+  background-color: #f5f5ff;
 }
 
 table td[class*="span"],
@@ -4339,7 +4339,8 @@ input[type="submit"].btn.btn-mini {
 .navbar .brand {
   display: block;
   float: left;
-  padding: 10px 20px 10px;
+  /*padding: 10px 20px 10px;*/
+  padding:0;
   margin-left: -20px;
   font-size: 20px;
   font-weight: 200;

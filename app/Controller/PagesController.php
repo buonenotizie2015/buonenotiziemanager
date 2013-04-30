@@ -31,27 +31,16 @@ App::uses('AppController', 'Controller');
  */
 class PagesController extends AppController {
 
-/**
- * Controller name
- *
- * @var string
- */
 	public $name = 'Pages';
+	
+	public $actsAs = array('Containable');
 
-/**
- * This controller does not use a model
- *
- * @var array
- */
-	public $uses = array();
+	public $uses = array('Category');
 
-/**
- * Displays a view
- *
- * @param mixed What page to display
- * @return void
- */
 	public function display() {
+		$categories = $this->Category->find('all', array()); 
+		$this->set(compact('categories'));
+		
 		$path = func_get_args();
 
 		$count = count($path);

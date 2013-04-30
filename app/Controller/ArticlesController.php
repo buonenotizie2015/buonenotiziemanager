@@ -132,8 +132,12 @@ class ArticlesController extends AppController {
 	}
 
 	public function add() {
+		if($this->request->is('ajax')){
+			$this->layout = false;
+		}
 		if(isset($this->request->data['Article']['confirm'])){
-			$this->Session->setFlash(__('Check article datas and submit the form.'));
+			if(!$this->request->is('ajax'))
+				$this->Session->setFlash(__('Check article datas and submit the form.'));
 		}
 		else{
 			if (($this->request->is('post') || $this->request->is('put'))) {

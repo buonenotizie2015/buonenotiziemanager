@@ -76,6 +76,28 @@ class CategoriesController extends AppController {
 		$this->set(compact('articles'));
 	}
 	
+	public function getFeed() {
+		$this->layout = false;
+		if(isset($this->data['feedUrl'])){
+			$xmlFeed = Xml::build($this->data['feedUrl']);
+			$feedData = Set::reverse($xmlFeed);
+			$channel['channel'] = $feedData['rss']['channel'];
+			$this->set('channel', $channel);
+			
+			$articles = $this->Category->Article->find('all',
+				array(
+					'limit' => 0,
+					'conditions' => array('Article.category_id =' => $this->data['categoryID']),
+					'order' => array('Article.pubDate DESC'),
+					'fields' => array('Article.*')
+				)
+			);
+			$this->set(compact('articles'));
+			
+			$this->set('categoryid', $this->data['categoryID']);
+		}
+	}
+	
 	public function news($param = null) {
 		if(empty($param))
 			throw new NotFoundException(__('Wrong object request'));

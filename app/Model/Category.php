@@ -66,8 +66,8 @@ class Category extends AppModel {
 	
 	public $hasOne = array(
 		'Feed' => array(
-			'className'    => 'Feed',
-			'dependent'    => true
+			'className' => 'Feed',
+			'dependent' => true
 		)
 	);
 	

@@ -67,6 +67,7 @@
 
 <script>
 	$('.feed_table_container').on('click', '.import-article', function() {
+		var thisRow = $(this).parents('tr');
 		$.ajax({
 			url: $(this).parent('form').attr('action'),
 			data: $(this).parent('form').serialize(),
@@ -75,6 +76,25 @@
 				var result = $(response);
 				$('.modal-body').html(result.html());
 				$('#modal').modal('show');
+				$('#modal').on('click', '.submit input', function(e) {
+					e.preventDefault();
+					console.log($(".modal-body").find('form').attr('action'));
+					$.ajax({
+						url: $(".modal-body").find('form').attr('action'),
+						data: $(".modal-body").find('form').serialize(),
+						type: 'POST',
+						success: function(){
+							$('.modal-body').html('<div class="alert alert-success">Article inserted</div>');
+							thisRow.addClass('articleInserted');
+							setTimeout(function(){
+								$('#modal').modal('hide');
+							}, 1000);
+						},
+						error: function(){
+							$('.modal-body').append('<div class="alert alert-error">Error: article not inserted</div>');
+						}
+					});
+				});
 			}
 		});
 	});

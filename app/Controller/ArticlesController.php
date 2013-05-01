@@ -145,7 +145,10 @@ class ArticlesController extends AppController {
 				if ($this->Article->save($this->request->data)) {
 					$this->Session->setFlash(__('The article has been saved'));
 					$lastSaved = $this->Article->findById($this->Article->id);
-					$this->redirect(array('controller' => 'categories', 'action' => 'view', $lastSaved['Article']['category_id']));
+					if($this->request->is('ajax'))
+						$this->redirect(array('controller' => 'pages', 'action' => 'display', 'home'));
+					else
+						$this->redirect(array('controller' => 'categories', 'action' => 'view', $lastSaved['Article']['category_id']));
 				} else {
 					$this->Session->setFlash(__('The article could not be saved. Please, try again.'));
 				}

@@ -62,10 +62,10 @@ class DATABASE_CONFIG {
 	public $default = array(
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
-		'host' => 'localhost',
-		'login' => 'mysqlusr',
-		'password' => 'mysqlpwd',
-		'database' => 'feedmanager_app_bn',
+		'host' => 'eu-cdbr-azure-west-a.cloudapp.net',
+		'login' => 'bf4e66fa9b32ef',
+		'password' => '77c111f4',
+		'database' => 'appbndb',
 		'prefix' => '',
 		'encoding' => 'utf8',
 	);

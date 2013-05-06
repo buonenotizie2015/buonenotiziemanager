@@ -76,9 +76,8 @@
 				var result = $(response);
 				$('.modal-body').html(result.html());
 				$('#modal').modal('show');
-				$('#modal').on('click', '.submit input', function(e) {
+				$('.modal-body .submit input').click(function(e) {
 					e.preventDefault();
-					console.log($(".modal-body").find('form').attr('action'));
 					$.ajax({
 						url: $(".modal-body").find('form').attr('action'),
 						data: $(".modal-body").find('form').serialize(),

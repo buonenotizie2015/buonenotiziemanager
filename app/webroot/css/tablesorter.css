@@ -20,3 +20,6 @@ table.tablesorter tr form {
 .tablesorter-scroller-table {
 	border:1px solid #ccc;
 }
+.feed_table_container .refreshButton {
+	margin-bottom:15px;
+}

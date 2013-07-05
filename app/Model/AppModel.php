@@ -40,27 +40,18 @@ class AppModel extends Model {
 		$params ['conditions']= array();
 		$params ['conditions'][$this->name.'.slug']= $slug;
 		if (!is_null($id)) {
-			$params ['conditions']['not'] = array($this->name.'.id'=>$id);
+			$params ['conditions']['NOT'] = array($this->name.'.id'=>$id);
 		}
-		while (count($this->find ('all',$params))) {
+
+		while (count($this->find('all',$params))) {
 			if (!preg_match ('/-{1}[0-9]+$/', $slug )) {
 				$slug .= '-' . ++$i;
 			} else {
 				$slug = preg_replace ('/[0-9]+$/', ++$i, $slug );
 			}
-			$params ['conditions'][$this->name . '.slug']= $slug;
+			$params['conditions'][$this->name . '.slug']= $slug;
 		}
 		return $slug;
 	}
 	
-	public function generateSlug($string) {
-			$slug = strtolower(Inflector::slug($string, '-'));
-			$count = $this->find( 'count', array(
-				'conditions' => array(
-					$this->alias . ".slug REGEXP" => "^($slug)(-\d+)?"
-				)
-			));
-			if($count > 0) return $slug . "_" . $count;
-			else return $slug;
-		}
 }

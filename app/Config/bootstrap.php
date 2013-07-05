@@ -181,3 +181,4 @@ CakeLog::config('error', array(
 ));
 
 CakePlugin::load('BootstrapCake');
+CakePlugin::load('Utility', array('bootstrap' => true, 'routes' => true));

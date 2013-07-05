@@ -34,7 +34,7 @@ App::import('Xml');
  */
 class AppController extends Controller {
 	
-	public $helpers = array('BootstrapCake.Bootstrap', 'Text'); 
+	public $helpers = array('BootstrapCake.Bootstrap', 'Text');
 	
 	public $components = array(
 		'Session',

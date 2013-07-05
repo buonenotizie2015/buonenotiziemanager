@@ -7,6 +7,10 @@
 		echo $this->Form->input('Category.name');
 		echo $this->Form->input('Category.parent_id', array('options' => $parentCategories, 'empty' => '(no parent)'));
 		echo $this->Form->input('Category.slug');
+		echo $this->Form->input('Category.color', 
+			array('value'=> !empty($parentColor)? $parentColor['Category']['color']: null,
+				'placeholder' => 'hex color: #FFCC00',
+				'label' => 'Color (child categories automatically gets parent color)'));
 		echo $this->Form->input('Feed.id', array('type' => 'hidden'));
 		echo $this->Form->input('Feed.url', array('label' => 'Feed Url'));
 		if ($this->Session->read('Auth.User.role') === 'admin'){

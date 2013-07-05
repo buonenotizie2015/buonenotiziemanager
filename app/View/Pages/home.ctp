@@ -1,4 +1,5 @@
 <?php echo $this->Html->css('tablesorter'); ?>
+<?php echo $this->Html->script('jquery.inview'); ?>
 <?php echo $this->Html->script('jquery.tablesorter.min'); ?>
 <?php echo $this->Html->script('jquery.tablesorter.widgets.min'); ?>
 <?php echo $this->Html->script('widget-scroller'); ?>
@@ -16,7 +17,7 @@
 			
 			<div class="feed_table_container">
 				<h3><?php echo $category['Feed']['name']; ?></h3>
-				<input id="btn_<?php echo $category['Category']['id']; ?>" type="button" value="refresh feed">
+				<input class="refreshButton btn btn btn-primary" id="btn_<?php echo $category['Category']['id']; ?>" type="button" value="refresh feed">
 				<div id="response_div_<?php echo $category['Category']['id']; ?>"></div>
 				<script>
 				function fnc_<?php echo $category['Category']['id']; ?>(){
@@ -34,7 +35,7 @@
 							$("#response_div_<?php echo $category['Category']['id']; ?>").html(response);
 							$(".tablefeed").tablesorter({
 								showProcessing: true,
-								widgets: [ 'scroller' ],
+								//widgets: [ 'scroller' ],
 								widgetOptions : {
 									scroller_height : 300,
 									scroller_jumpToHeader: true,
@@ -43,14 +44,20 @@
 							});
 						},
 						error: function(errordata){
-							$("#response_div_<?php echo $category['Category']['id']; ?>").html("An error occurred loading feed:<pre>"+errordata+"</pre>");
+							console.log(errordata);
+							$("#response_div_<?php echo $category['Category']['id']; ?>").html('<div class="alert alert-error">An error ('+errordata.status+' - '+errordata.statusText+') occurred loading feed:</div><div class="well well-small">'+errordata.responseText+'</div>');
 						}
 					});
 				}
 				$("#btn_<?php echo $category['Category']['id']; ?>").click(function() {
 					fnc_<?php echo $category['Category']['id']; ?>();
 				});
-				fnc_<?php echo $category['Category']['id']; ?>();
+
+				$('#response_div_<?php echo $category['Category']['id']; ?>').one('inview', function (event, visible) {
+    				if (visible) {
+      					fnc_<?php echo $category['Category']['id']; ?>();
+    				}
+				});
 				
 				</script>
 			</div>

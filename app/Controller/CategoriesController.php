@@ -69,7 +69,7 @@ class CategoriesController extends AppController {
 						'conditions' => array('ParentCategory.id =' => $category['Category']['parent_id'] ),
 					)
 				),
-				'fields' => array('Article.*', 'Category.*', 'ParentCategory.name')
+				'fields' => array('Article.*', 'Category.*', 'ParentCategory.name, ParentCategory.color')
 			)
 		);
 		
@@ -112,9 +112,10 @@ class CategoriesController extends AppController {
 
 	public function add() {
 		$parentCategories = $this->Category->ParentCategory->find('list', array('conditions' => array('ParentCategory.parent_id' => null)));
+		$parentColors = $this->Category->ParentCategory->find('all', array('conditions' => array('ParentCategory.parent_id' => null), 'recursive' => -1));
 		$users = $this->Category->User->find('list', array('conditions' => array('User.role !=' => 'admin')));
 		$feeds = $this->Category->Feed->find('list');
-		$this->set(compact('parentCategories', 'users', 'feeds'));
+		$this->set(compact('parentCategories', 'users', 'feeds', 'parentColors'));
 		
 		if ($this->request->is('post')) {
 			$this->Category->create();
@@ -128,7 +129,7 @@ class CategoriesController extends AppController {
 				$parentSlug = isset($parentName['Category']) ? $parentName['Category']['name'].'-' : '';
 				$this->request->data['Category']['slug'] = $this->Category->createSlug($parentSlug.$this->request->data['Category']['name']);
 			}
-			
+
 			//set feed
 			if(!empty($this->request->data['Feed']['url'])){
 				$parentHead = isset($parentName['Category']) ? $parentName['Category']['name'].' ' : '';
@@ -154,9 +155,20 @@ class CategoriesController extends AppController {
 		if ($this->request->is('post') || $this->request->is('put')) {
 			
 			//set slug
-			$parentName = $this->Category->findById($this->request->data['Category']['parent_id']);
-			$parentSlug = isset($parentName) ? $parentName['Category']['name'].'-' : '';
-			$this->request->data['Category']['slug'] = $this->Category->createSlug($parentSlug.$this->request->data['Category']['name'], $this->Category->id); 
+			$parentCat = $this->Category->findById($this->request->data['Category']['parent_id']);
+			$parentSlug = isset($parentCat['Category']) ? $parentCat['Category']['name'].'-' : '';
+			$this->request->data['Category']['slug'] = $this->Category->createSlug($parentSlug.$this->request->data['Category']['name'], $id);
+
+			//check feed url
+			if(empty($this->request->data['Feed']['url'])){
+				$this->request->data = Set::remove($this->request->data, 'Feed');
+			}
+
+			//check color
+			if(empty($this->request->data['Category']['color'])&&!empty($this->request->data['Category']['parent_id'])){
+				$this->Category->validator()->remove('color');
+				$this->request->data['Category']['color'] = $parentCat['Category']['color'];
+			}
 			
 			if ($this->Category->saveAll($this->request->data)) {
 				$this->Session->setFlash(__('The category has been saved'));
@@ -168,7 +180,7 @@ class CategoriesController extends AppController {
 			$options = array('conditions' => array('Category.' . $this->Category->primaryKey => $id));
 			$this->request->data = $this->Category->find('first', $options);
 		}
-		
+
 		$parentCategories = $this->Category->ParentCategory->find('list', array('conditions' => array('ParentCategory.parent_id' => null)));
 		$feeds = $this->Category->Feed->find('list');
 		$users = $this->Category->User->find('list', array('conditions' => array('User.role !=' => 'admin')));
@@ -178,7 +190,9 @@ class CategoriesController extends AppController {
 			if(in_array($userKey, $selUsers))
 				array_push($selectedUsers, $userKey);
 		}
-		$this->set(compact('parentCategories', 'users', 'feeds', 'selectedUsers'));
+		$category = $this->Category->find('first', array('conditions' => array('Category.id' => $id)));
+		$parentColor = $this->Category->find('first', array('conditions' => array('Category.id' => $category['Category']['parent_id']), 'recursive' => -1));
+		$this->set(compact('parentCategories', 'users', 'feeds', 'selectedUsers', 'parentColor'));
 	}
 
 	public function delete($id = null) {

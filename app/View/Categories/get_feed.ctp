@@ -4,7 +4,7 @@
 			<th><?php echo __('Title'); ?></th>
 			<th><?php echo __('Description'); ?></th>
 			<th><?php echo __('Pub Date'); ?></th>
-			<th><?php echo __('Images'); ?></th>
+			<!--<th><?php echo __('Images'); ?></th>-->
 			<th><?php echo __('Actions'); ?></th>
 		</tr>
 	</thead>
@@ -24,15 +24,16 @@
 				$pubDate = date('Y-m-d H:i:s', strtotime($itemField['pubDate']));
 			else
 				$pubDate = date('Y-m-d H:i:s');
+
+			$itemLink = is_array($itemField['link']) ? $itemField['link']['@'] : $itemField['link'];
+			$imageURL = $this->RssStalker->findImages($itemField, null);
 	?>
 		<tr <?php echo $inserted!=false ? 'class="articleInserted"' : ''; ?> >
-			<td><?php echo $itemField['title']; ?></td>
+			<td><?php echo $this->Html->link($itemField['title'], $itemLink, array('target' => '_blank')); ?></td>
 			<td><?php echo html_entity_decode(strip_tags($itemField['description']), ENT_QUOTES, ''); ?></td>
 			<td><?php echo isset($itemField['pubDate']) ? $pubDate : '<span class="label label-important">Data mancante</span><br/>'.$pubDate; ?></td>
-			<td><?php $imageURL = $this->RssStalker->findImages($itemField, null); echo '<img width="100" src="'.$imageURL.'"/>'; ?></td>
+			<!--<td><?php  echo '<img width="100" src="'.$imageURL.'"/>'; ?></td>-->
 			<td>
-				<?php $itemLink = is_array($itemField['link']) ? $itemField['link']['@'] : $itemField['link']; ?>
-				<?php echo $this->Html->link(__('View'), $itemLink, array('target' => '_blank', 'class' => 'btn btn-small')); ?>
 				<?php echo $this->Form->create('Article', array('id' => 'importArticle', 'type' => 'post', 'url' => array('controller' => 'articles', 'action' => 'add')));
 				echo $this->Form->hidden('Article.title', array('default' => $itemField['title']));
 				echo $this->Form->hidden('Article.link', array('default' => $itemLink));

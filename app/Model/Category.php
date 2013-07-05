@@ -2,7 +2,7 @@
 App::uses('AppModel', 'Model');
 
 class Category extends AppModel {
-	
+
 	public $displayField = 'name';
 	
 	public $actsAs = array('Tree');
@@ -21,6 +21,13 @@ class Category extends AppModel {
 				'message' => 'This slug already exists',
 				'required' => false,
 				'allowEmpty' => true,
+			)
+		),
+		'color' => array(
+			'hexcolor' => array(
+				'rule'    => '/^#([a-f0-9]{6})$/i',
+				'message' => 'Color must be in HEX format, for example: #FFCC00',
+				'allowEmpty' => false,
 			)
 		)
 	);
@@ -80,17 +87,7 @@ class Category extends AppModel {
 			'unique' => 'keepExisting',
 		)
 	);
-	
-	public function beforeSave($data){
-		foreach (array_keys($this->hasAndBelongsToMany) as $model){
-			if(isset($data[$this->name][$model])){
-				$data[$model][$model] = $data[$this->name][$model];
-				unset($data[$this->name][$model]);
-			}
-		}
-		return $data;
-	}
-	
+
 	public function isOwnedBy($category, $user) {
 		return $this->UsersCategory->field('category_id', array('category_id' => $category, 'user_id' => $user)) === $category;
 	}

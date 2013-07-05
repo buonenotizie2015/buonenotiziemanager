@@ -92,7 +92,7 @@ class ArticlesController extends AppController {
 					'conditions' => array('ParentCategory.id = Category.parent_id' ),
 				)
 			),
-			'fields' => array('Article.*', 'Category.*', 'ParentCategory.name')
+			'fields' => array('Article.*', 'Category.*', 'ParentCategory.name,  ParentCategory.color')
 			));
 		$this->set(compact('articles', 'reqPage', 'fromArt', 'conditions'));
 	}
@@ -118,7 +118,7 @@ class ArticlesController extends AppController {
 					'conditions' => array('ParentCategory.id = Category.parent_id' ),
 				)
 			),
-			'fields' => array('Article.*', 'Category.*', 'ParentCategory.name')
+			'fields' => array('Article.*', 'Category.*', 'ParentCategory.name,  ParentCategory.color')
 			));
 		$this->set('articles', $articles);
 	}

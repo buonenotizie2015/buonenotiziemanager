@@ -1,0 +1,276 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+    ],
+    "hash": "f7afffa8ba37b36dffc5b57af9a85544",
+    "packages": [
+        {
+            "name": "composer/installers",
+            "version": "v1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/installers.git",
+                "reference": "v1.0.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/installers/zipball/v1.0.4",
+                "reference": "v1.0.4",
+                "shasum": ""
+            },
+            "replace": {
+                "shama/baton": "*"
+            },
+            "require-dev": {
+                "composer/composer": "1.0.*@dev",
+                "phpunit/phpunit": "3.7.*"
+            },
+            "type": "composer-installer",
+            "extra": {
+                "class": "Composer\\Installers\\Installer",
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Composer\\Installers\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kyle Robinson Young",
+                    "email": "kyle@dontkry.com",
+                    "homepage": "https://github.com/shama",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A multi-framework Composer library installer",
+            "homepage": "http://composer.github.com/installers/",
+            "keywords": [
+                "TYPO3 Flow",
+                "TYPO3 Neos",
+                "agl",
+                "cakephp",
+                "codeigniter",
+                "drupal",
+                "fuelphp",
+                "installer",
+                "joomla",
+                "kohana",
+                "laravel",
+                "li3",
+                "lithium",
+                "mako",
+                "modulework",
+                "phpbb",
+                "ppi",
+                "silverstripe",
+                "symfony",
+                "wordpress",
+                "zend"
+            ],
+            "time": "2013-06-20 02:36:19"
+        },
+        {
+            "name": "mjohnson/decoda",
+            "version": "6.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/milesj/Decoda.git",
+                "reference": "6.1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/milesj/Decoda/zipball/6.1.0",
+                "reference": "6.1.0",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Decoda": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Miles Johnson",
+                    "homepage": "http://milesj.me"
+                }
+            ],
+            "description": "A lightweight lexical string parser for BBCode styled markup.",
+            "homepage": "http://milesj.me/code/php/decoda",
+            "keywords": [
+                "HOOK",
+                "bbcode",
+                "decoda",
+                "filter",
+                "markup",
+                "parser"
+            ],
+            "time": "2013-07-02 19:33:57"
+        },
+        {
+            "name": "mjohnson/utility",
+            "version": "1.4.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/milesj/Utility.git",
+                "reference": "1.4.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/milesj/Utility/zipball/1.4.4",
+                "reference": "1.4.4",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "*",
+                "ext-mbstring": "*",
+                "mjohnson/decoda": "6.*",
+                "php": ">=5.3.0",
+                "titon/utility": "*"
+            },
+            "type": "cakephp-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Miles Johnson",
+                    "homepage": "http://milesj.me"
+                }
+            ],
+            "description": "A collection of CakePHP utility libraries.",
+            "homepage": "http://milesj.me/code/cakephp/utility",
+            "keywords": [
+                "Behavior",
+                "Sitemap",
+                "aggregator",
+                "ajax-handler",
+                "auto-login",
+                "bbcode",
+                "cache-kill",
+                "cacheable",
+                "cakephp",
+                "component",
+                "controller",
+                "convertable",
+                "datasource",
+                "decoda",
+                "enumerable",
+                "feed",
+                "filterable",
+                "helper",
+                "markup",
+                "model",
+                "open-graph",
+                "plugin",
+                "shell",
+                "sluggable",
+                "spam-blocker",
+                "utility",
+                "validateable"
+            ],
+            "time": "2013-06-19 03:17:16"
+        },
+        {
+            "name": "titon/utility",
+            "version": "0.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/titon/Utility.git",
+                "reference": "0.9.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/titon/Utility/zipball/0.9.0",
+                "reference": "0.9.0",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "ext-fileinfo": "*",
+                "ext-mcrypt": "*",
+                "ext-simplexml": "*",
+                "titon/test": "*"
+            },
+            "suggest": {
+                "ext-fileinfo": "Validate file mime types with the Validate class",
+                "ext-mcrypt": "Encrypt and decrypt data with the Crypt class",
+                "ext-simplexml": "Convert XML to other file types with the Converter class"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Titon\\Utility": "src/"
+                },
+                "files": [
+                    "src/Titon/bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2"
+            ],
+            "authors": [
+                {
+                    "name": "Miles Johnson",
+                    "homepage": "http://milesj.me"
+                }
+            ],
+            "description": "The Titon utility package provides convenience classes for basic tasks like validation, formatting, sanitization and more.",
+            "homepage": "https://github.com/titon/Utility",
+            "keywords": [
+                "converter",
+                "crypt",
+                "format",
+                "hash",
+                "inflector",
+                "loader",
+                "number",
+                "sanitize",
+                "string",
+                "time",
+                "titon",
+                "utility",
+                "uuid",
+                "validate"
+            ],
+            "time": "2013-06-24 05:25:31"
+        }
+    ],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
+    "minimum-stability": "stable",
+    "stability-flags": [
+
+    ],
+    "platform": [
+
+    ],
+    "platform-dev": [
+
+    ]
+}

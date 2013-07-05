@@ -41,7 +41,7 @@ class CategoriesController extends AppController {
 		$this->Category->recursive = 0;
 		//$this->Category->find('threaded');
 		//$categories = $this->Category->reorder(array('field' => 'name','order' => 'asc'));
-		$this->paginate = array('limit' => 50);
+		$this->paginate = array('limit' => $this->Category->find('count'));
 		$this->set('categories', $this->paginate());
 	}
 

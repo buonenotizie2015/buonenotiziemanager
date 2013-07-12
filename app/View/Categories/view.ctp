@@ -116,7 +116,7 @@ jQuery(document).ready(function($){
                     
                     $inserted = false;
                     foreach($articles as $article){
-                        if($article['Article']['title']==$itemField['title'])
+                        if($article['Article']['link']==$itemLink)
                             $inserted = true;
                     }
 

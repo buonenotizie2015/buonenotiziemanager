@@ -14,12 +14,6 @@
 	
 		foreach ($channel['channel']['item'] as $itemField):
 			
-			$inserted = false;
-			foreach($articles as $article){
-				if($article['Article']['title']==$itemField['title'])
-					$inserted = true;
-			}
-			
 			if(isset($itemField['pubDate']))
 				$pubDate = date('Y-m-d H:i:s', strtotime($itemField['pubDate']));
 			else
@@ -27,6 +21,12 @@
 
 			$itemLink = is_array($itemField['link']) ? $itemField['link']['@'] : $itemField['link'];
 			$imageURL = $this->RssStalker->findImages($itemField, null);
+
+			$inserted = false;
+			foreach($articles as $article){
+				if($article['Article']['link']==$itemLink)
+					$inserted = true;
+			}
 	?>
 		<tr <?php echo $inserted!=false ? 'class="articleInserted"' : ''; ?> >
 			<td><?php echo $this->Html->link($itemField['title'], $itemLink, array('target' => '_blank')); ?></td>

@@ -16,8 +16,12 @@ class CategoriesController extends AppController {
 			$categoryId = $this->request->params['pass'][0];
 			if (isset($user['role']) && $user['role'] === 'admin')
 				return true;
-			elseif ($this->Category->isOwnedBy($categoryId, $this->Session->read('Auth.User.id')))
+			elseif ($this->Category->isOwnedBy($categoryId, $this->Session->read('Auth.User.id'))&&$this->action=='edit')
 				return true;
+			elseif ($this->action=='delete' && $user['role']=='author'){
+				$this->Session->setFlash(__('You are not allowed to delete any category!'));
+				return false;
+			}
 			else{
 				$this->Session->setFlash(__('You are not allowed to modify this category!'));
 				return false;
@@ -43,6 +47,11 @@ class CategoriesController extends AppController {
 		//$categories = $this->Category->reorder(array('field' => 'name','order' => 'asc'));
 		$this->paginate = array('limit' => $this->Category->find('count'));
 		$this->set('categories', $this->paginate());
+	}
+	
+	public function repair() {
+		$this->Category->recover();
+		$this->redirect(array('action' => 'index'));
 	}
 
 	public function view($param = null) {

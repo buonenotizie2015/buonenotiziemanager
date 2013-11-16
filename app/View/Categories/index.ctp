@@ -44,5 +44,6 @@
 	<h3><?php echo __('Actions'); ?></h3>
 	<ul class="nav nav-pills nav-stacked">
 		<li><?php echo $this->Html->link(__('New Category'), array('action' => 'add')); ?></li>
+		<li><?php echo $this->Html->link(__('Repair Order Category'), array('action' => 'repair')); ?></li>
 	</ul>
 </div>

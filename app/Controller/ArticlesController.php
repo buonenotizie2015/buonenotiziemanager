@@ -177,7 +177,7 @@ class ArticlesController extends AppController {
 			$options = array('conditions' => array('Article.' . $this->Article->primaryKey => $id));
 			$this->request->data = $this->Article->find('first', $options);
 		}
-		$categories = $this->Article->Category->find('list');
+		$categories = $this->Article->Category->generateTreeList(null, null, null, ' - ');
 		$this->set(compact('categories'));
 	}
 

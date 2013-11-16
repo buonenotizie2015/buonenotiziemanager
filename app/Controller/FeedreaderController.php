@@ -7,7 +7,7 @@ class FeedreaderController extends AppController {
 	public $uses = array('Utility.Aggregator');
 
     public function index() {
-    	$categories = $this->Category->find('all', array("NOT" => array("Feed.url" => array(null, "")))); 
+    	//$categories = $this->Category->find('all', array("NOT" => array("Feed.url" => array(null, "")))); 
 
         $aggregatedfeeds = $this->Aggregator->find('all', array(
         	'conditions' => array(

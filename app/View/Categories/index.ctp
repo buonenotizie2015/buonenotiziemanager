@@ -6,11 +6,13 @@
 			<th><?php echo $this->Paginator->sort('slug'); ?></th>
 			<th><?php echo $this->Paginator->sort('parent_id'); ?></th>
 			<th><?php echo $this->Paginator->sort('Feed'); ?></th>
+			<th><?php echo $this->Paginator->sort('Auto import Articles'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
-	<?php foreach ($categories as $category): ?>
-	<tr <?php echo $category['ParentCategory']['name'] ? '' : 'style="background-color:#eee;"' ; ?>>
-		<td><?php echo $category['ParentCategory']['name'] ? '&rarr; '.h($category['Category']['name']) : '<b style="text-transform:uppercase;">'.h($category['Category']['name']).'</b>'; ?>&nbsp;</td>
+	<?php foreach ($categories as $category):
+			$isParent = $category['ParentCategory']['name'] ? false : true; ?>
+	<tr <?php echo $isParent ? 'style="background-color:#eee;"' : ''; ?>>
+		<td><?php echo $isParent ? '<b style="text-transform:uppercase;">'.h($category['Category']['name']).'</b>' : '&rarr; '.h($category['Category']['name']); ?>&nbsp;</td>
 		<td><?php echo h($category['Category']['slug']); ?>&nbsp;</td>
 		<td>
 			<?php echo $this->Html->link($category['ParentCategory']['name'], array('controller' => 'categories', 'action' => 'view', $category['ParentCategory']['id'])); ?>
@@ -18,9 +20,13 @@
 		<td>
 			<?php echo $this->Html->link($category['Feed']['name'], array('controller' => 'feeds', 'action' => 'view', $category['Feed']['id'])); ?>
 		</td>
+		<td>
+			<?php if(!$isParent) echo $category['Category']['auto_import'] ? 'true' : 'false'; ?>
+		</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $category['Category']['id']), array('class' => 'btn btn-small')); ?>
 			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $category['Category']['id']), array('class' => 'btn btn-small')); ?>
+			<?php if(!$isParent) echo $this->Html->link(__('Import all Articles'), array('action' => 'importCategoryArticles', $category['Category']['id']), array('class' => 'btn btn-small'), 'Vuoi davvero importare tutti gli Articoli dal feeed di questa categoria?'); ?>
 			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $category['Category']['id']), array('class' => 'btn btn-small'), __('Are you sure you want to delete # %s?', $category['Category']['id'])); ?>
 		</td>
 	</tr>
@@ -45,5 +51,6 @@
 	<ul class="nav nav-pills nav-stacked">
 		<li><?php echo $this->Html->link(__('New Category'), array('action' => 'add')); ?></li>
 		<li><?php echo $this->Html->link(__('Repair Order Category'), array('action' => 'repair')); ?></li>
+		<li><?php echo $this->Html->link(__('Import all Articles (only for "auto-import" Categories)'), array('action' => 'importAllArticles'), array(), 'Vuoi davvero importare tutti gli Articoli dai feed di tutte le Categorie?'); ?></li>
 	</ul>
 </div>

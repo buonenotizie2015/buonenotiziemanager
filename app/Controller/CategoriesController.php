@@ -1,11 +1,13 @@
 <?php
 App::uses('AppController', 'Controller');
+App::uses('RssStalkerLib', 'Lib');
 
 class CategoriesController extends AppController {
 	
 	public $displayField = 'name';
 	public $helper = array('RssStalker', 'Js');
 	public $components = array('RequestHandler');
+	var $uses = array('Category', 'Article');
 	
 	public function beforeFilter() {
 		parent::beforeFilter();
@@ -105,6 +107,98 @@ class CategoriesController extends AppController {
 			
 			$this->set('categoryid', $this->data['categoryID']);
 		}
+	}
+
+	public function importCategoryArticles($id = null) {
+		if (!$this->Category->exists($id)) {
+			throw new NotFoundException(__('Invalid category'));
+		}
+		$options = array('conditions' => array('Category.' . $this->Category->primaryKey => $id));
+		$category =  $this->Category->find('first', $options);
+
+		$this->set('category', $category);
+
+		if (!empty($category['Feed']['id'])){
+			$xmlFeed = Xml::build($category['Feed']['url']);
+	        $feedData = Set::reverse($xmlFeed);
+
+	        //IS RSS OR ATOM?
+	        $channel = isset($feedData['rss']) ? $feedData['rss']['channel']['item'] : $feedData['feed']['entry'];
+
+	        $insertedArticles = $this->Category->Article->find('all',
+				array(
+					'limit' => 0,
+					'conditions' => array('Article.category_id =' => $category['Category']['id']),
+					'order' => array('Article.pubDate DESC'),
+					'joins' => array(
+						array(
+							'table' => 'Categories',
+							'alias' => 'ParentCategory',
+							'type' => 'left',
+							'conditions' => array('ParentCategory.id =' => $category['Category']['parent_id'] ),
+						)
+					),
+					'fields' => array('Article.*', 'Category.*', 'ParentCategory.name, ParentCategory.color')
+				)
+			);
+
+	        $savedArticles = array();
+	        $unsavedArticles = array();
+
+	        $RssStalkerLib = new RssStalkerLib();
+
+	        foreach ($channel as $itemField){
+	        	$article['title'] = $itemField['title'];
+                //$itemLink = is_array($itemField['link']) ? $itemField['link']['@'] : $itemField['link'];
+                
+                $article['link'] = $RssStalkerLib->findLink($itemField['link'], null);
+                $article['image'] = $RssStalkerLib->findImages($itemField, null);
+
+                if(isset($feedData['rss'])){
+                    //RSS structure
+                    $article['pubDate'] = isset($itemField['pubDate']) ? date('Y-m-d H:i:s', strtotime($itemField['pubDate'])) : date('Y-m-d H:i:s');
+                    $article['description'] = isset($itemField['description']) ? html_entity_decode(strip_tags($itemField['description']), ENT_QUOTES, '') : 'Descrizione non disponibile';
+
+                } else {
+                    //ATOM STRUCTURE
+                    $article['pubDate'] = isset($itemField['updated']) ? date('Y-m-d H:i:s', strtotime($itemField['updated'])) : date('Y-m-d H:i:s');
+                    $article['description'] = isset($itemField['summary']) ? html_entity_decode(strip_tags($itemField['summary']['@']), ENT_QUOTES, '') : 'Descrizione non disponibile';
+
+                }
+
+                $article['category_id'] = $category['Category']['id'];
+                
+                $article['inserted'] = false;
+                foreach($insertedArticles as $insertedArticle){
+                    if($insertedArticle['Article']['link']==$article['link']){
+                        $article['inserted'] = true;
+                        break;
+                    }
+                }
+                if(!$article['inserted']){
+					$this->Article->create();
+                    $this->Article->save($article);
+                    array_push($savedArticles, $article);
+                }
+                else {
+                	array_push($unsavedArticles, $article);
+                }
+
+	        }
+
+    	}
+
+    	$this->set('savedArticles', $savedArticles);
+    	$this->set('unsavedArticles', $unsavedArticles);
+        
+	}
+
+	public function importAllArticles(){
+		 $categories = $this->Category->find('all', array(
+		 	'conditions' => array('Category.auto_import' => 1, 'Category.parent_id !=' => null)
+		 ));
+
+		 $this->set('categories', $categories);
 	}
 	
 	public function news($param = null) {

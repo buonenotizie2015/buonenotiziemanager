@@ -59,7 +59,7 @@
  */
 class DATABASE_CONFIG {
 
-	public $default = array(
+	/*public $default = array(
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
 		'host' => 'eu-cdbr-azure-west-a.cloudapp.net',
@@ -68,10 +68,10 @@ class DATABASE_CONFIG {
 		'database' => 'appbndb',
 		'prefix' => '',
 		'encoding' => 'utf8',
-	);
+	);*/
 
 	
-	/*public $default = array(
+	public $default = array(
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
 		'host' => 'localhost',
@@ -80,7 +80,7 @@ class DATABASE_CONFIG {
 		'database' => 'feedmanager_app_bn',
 		'prefix' => '',
 		'encoding' => 'utf8',
-	);*/
+	);
 	
 
 	public $test = array(

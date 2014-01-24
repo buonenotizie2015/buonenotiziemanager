@@ -9,6 +9,7 @@
 		echo $this->Form->input('Category.color',
 			array(	'placeholder' => 'hex color: #FFCC00',
 					'label' => 'Color (child categories automatically gets parent color)'));
+		echo $this->Form->input('Category.autoimport');
 		echo $this->Form->input('Feed.url', array('label' => 'Feed Url'));
 		echo $this->Form->input('Category.User', array('label' => 'Users permissions', 'multiple' => 'checkbox', 'options' => $users));
 	?>

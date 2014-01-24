@@ -31,6 +31,7 @@
         <ul class="nav nav-pills nav-stacked">
             <li><?php echo $this->Html->link(__('List Categories'), array('action' => 'index')); ?> </li>
             <li><?php echo $this->Html->link(__('New Category'), array('action' => 'add')); ?> </li>
+            <li><?php echo $this->Html->link(__('Import all Articles (only where autoimport=Yes)'), array('action' => 'importAllArticles'), array(), 'Vuoi davvero importare tutti gli Articoli dai feed di tutte le Categorie?'); ?></li>
         </ul>
     </div>
 

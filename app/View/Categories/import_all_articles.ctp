@@ -2,14 +2,15 @@
     <div class="category view">
     	<h2>Import all Articles</h2>
 
+
         <script type="text/javascript">var categories = [];
 
         <?php foreach ($categories as $category) {
+            $category['Category']['parentname'] = $category['ParentCategory']['name'];
             echo 'categories.push('.json_encode($category['Category']).');';
         }?>
 
         </script>
-
         <p>Processing <?php echo count($categories); ?> categories.</p>
 
         <div class="progress progress-striped active">
@@ -49,7 +50,7 @@
 
                     $('.progress .bar').attr('style', 'width: '+percent+'%')
                     var result = $(response);
-                    $('.accordion-heading').append('<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#cat'+category.id+'">'+category.name+' &mdash; '+$(response).find('.importResults').html()+'</a>');
+                    $('.accordion-heading').append('<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#cat'+category.id+'">['+category.parentname+'] '+category.name+' &mdash; '+$(response).find('.importResults').html()+'</a>');
                     $('.accordion-group').append('<div id="cat'+category.id+'" class="accordion-body collapse"><div class="accordion-inner">'+$(result).find('#importDetails').html()+'</div></div>')
                 }
             });

@@ -2,8 +2,8 @@
     <div class="category view">
     	<h2>Import all Articles</h2>
 
-
-        <script type="text/javascript">var categories = [];
+        <script type="text/javascript">
+            var categories = [];
 
         <?php foreach ($categories as $category) {
             $category['Category']['parentname'] = $category['ParentCategory']['name'];
@@ -11,7 +11,8 @@
         }?>
 
         </script>
-        <p>Processing <?php echo count($categories); ?> categories.</p>
+
+        <div class="alert alert-info">Processing <?php echo count($categories); ?> categories...</div>
 
         <div class="progress progress-striped active">
             <div class="bar" style="width: 2%;"></div>
@@ -47,11 +48,18 @@
                 type: 'POST',
                 async: false,
                 success: function(response){
+                    $('.alert').html('Processing '+categories.length+' categories... ('+Math.round(percent)+'%)');
+                    if(i+1==categories.length)
+                        $('.alert').removeClass('alert-info').addClass('alert-success');
 
                     $('.progress .bar').attr('style', 'width: '+percent+'%')
+
                     var result = $(response);
                     $('.accordion-heading').append('<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#cat'+category.id+'">['+category.parentname+'] '+category.name+' &mdash; '+$(response).find('.importResults').html()+'</a>');
                     $('.accordion-group').append('<div id="cat'+category.id+'" class="accordion-body collapse"><div class="accordion-inner">'+$(result).find('#importDetails').html()+'</div></div>')
+                },
+                error: function() {
+                    $('.alert').after('<div class="alert alert-error">Error processing: ['+category.parentname+'] '+category.name+'</div>');
                 }
             });
         });

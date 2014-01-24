@@ -11,6 +11,9 @@ jQuery(document).ready(function($){
 <div class="row">
     <div class="categories view">
         <h2>Category "<?php echo h($category['Category']['name']); ?>"</h2>
+
+        <pre><?php print_r($category) ?></pre>
+
         <dl>
         <!--
             <dt><?php echo __('Id'); ?></dt>

@@ -21,7 +21,7 @@
 			<?php echo $this->Html->link($category['Feed']['name'], array('controller' => 'feeds', 'action' => 'view', $category['Feed']['id'])); ?>
 		</td>
 		<td>
-			<?php if(!$isParent) echo $category['Category']['autoimport']==0 ? 'No' : 'Yes'; ?>
+			<?php if(!$isParent) echo $category['Category']['autoimport']==0 ? '<span class="label label-default">No</span>' : '<span class="label label-success">Yes</span>'; ?>
 		</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $category['Category']['id']), array('class' => 'btn btn-small')); ?>

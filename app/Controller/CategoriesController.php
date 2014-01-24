@@ -195,7 +195,7 @@ class CategoriesController extends AppController {
 
 	public function importAllArticles(){
 		 $categories = $this->Category->find('all', array(
-		 	'conditions' => array('Category.auto_import' => 1, 'Category.parent_id !=' => null)
+		 	'conditions' => array('Category.autoimport' => 1, 'Category.parent_id !=' => null)
 		 ));
 
 		 $this->set('categories', $categories);

@@ -27,8 +27,8 @@ jQuery(document).ready(function($){
 
             <dt><?php echo __('Auto import Articles'); ?></dt>
             <dd>
-                <?php echo $category['Category']['auto_import'] ? 'true' : 'false'; ?>
-                &nbsp; (<?php echo $category['Category']['auto_import']; ?>)
+                <?php echo $category['Category']['autoimport'] ? 'true' : 'false'; ?>
+                &nbsp; (<?php echo $category['Category']['autoimport']; ?>)
             </dd>
 
 

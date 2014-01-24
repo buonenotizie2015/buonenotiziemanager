@@ -21,7 +21,7 @@
 			<?php echo $this->Html->link($category['Feed']['name'], array('controller' => 'feeds', 'action' => 'view', $category['Feed']['id'])); ?>
 		</td>
 		<td>
-			<?php if(!$isParent) echo $category['Category']['auto_import'] ? 'true' : 'false'; ?>
+			<?php if(!$isParent) echo $category['Category']['autoimport'] ? 'true' : 'false'; ?>
 		</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $category['Category']['id']), array('class' => 'btn btn-small')); ?>

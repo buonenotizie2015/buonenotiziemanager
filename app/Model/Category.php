@@ -30,7 +30,7 @@ class Category extends AppModel {
 				'allowEmpty' => false,
 			)
 		),
-		'auto_import' => array(
+		'autoimport' => array(
 			'rule' => array('boolean'),
 			'required' => false,
         	'allowEmpty' => true,

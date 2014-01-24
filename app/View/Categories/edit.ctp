@@ -11,12 +11,7 @@
 			array('value'=> !empty($parentColor)? $parentColor['Category']['color']: null,
 				'placeholder' => 'hex color: #FFCC00',
 				'label' => 'Color (child categories automatically gets parent color)'));
-		echo '<div class="input select">';
-		echo $this->Form->label('Category.autoimport');
-		echo '<div class="radio">';
-		echo $this->Form->radio('Category.autoimport', array(0 => 'No', 1 => 'Yes'), array('legend' => false, 'value' => 0));
-		echo '</div>';
-		echo '</div>';
+		echo $this->Form->input('Category.auto_import');
 		echo $this->Form->input('Feed.id', array('type' => 'hidden'));
 		echo $this->Form->input('Feed.url', array('label' => 'Feed Url'));
 		if ($this->Session->read('Auth.User.role') === 'admin'){

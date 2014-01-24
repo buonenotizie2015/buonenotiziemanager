@@ -29,11 +29,6 @@ class Category extends AppModel {
 				'message' => 'Color must be in HEX format, for example: #FFCC00',
 				'allowEmpty' => false,
 			)
-		),
-		'autoimport' => array(
-			'rule' => array('boolean'),
-			'required' => false,
-        	'allowEmpty' => true,
 		)
 	);
 

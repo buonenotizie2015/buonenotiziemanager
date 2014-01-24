@@ -50,7 +50,7 @@
                 success: function(response){
                     $('.alert').html('Processing '+categories.length+' categories... ('+Math.round(percent)+'%)');
                     if(i+1==categories.length)
-                        $('.alert').removeClass('alert-info').addClass('alert-success');
+                        $('.alert').removeClass('alert-info').addClass('alert-success').html('Done! '+categories.length+' processed');
 
                     $('.progress .bar').attr('style', 'width: '+percent+'%')
 
